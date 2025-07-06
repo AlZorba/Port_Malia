@@ -1,0 +1,4642 @@
+{
+  "version": 1,
+  "project": "Port_Malia",
+  "crs": "WGS84",
+  "types": [
+    {
+      "type": "Context",
+      "labels": {
+        "fr": "US",
+        "en": "Context"
+      },
+      "plurals": {
+        "fr": "US",
+        "en": "Contexts"
+      },
+      "relations": [
+        {
+          "relation": "is above",
+          "type": "Context"
+        },
+        {
+          "relation": "includes",
+          "type": "Artifact"
+        },
+        {
+          "relation": "includes",
+          "type": "Artifact",
+          "subtype": "Lot"
+        },
+        {
+          "relation": "includes",
+          "type": "Artifact",
+          "subtype": "Pottery"
+        },
+        {
+          "relation": "includes",
+          "type": "Artifact",
+          "subtype": "Lamp"
+        },
+        {
+          "relation": "includes",
+          "type": "Artifact",
+          "subtype": "Terracotta"
+        },
+        {
+          "relation": "includes",
+          "type": "Artifact",
+          "subtype": "Bronze"
+        },
+        {
+          "relation": "includes",
+          "type": "Artifact",
+          "subtype": "Metal"
+        },
+        {
+          "relation": "includes",
+          "type": "Artifact",
+          "subtype": "Obsidian"
+        },
+        {
+          "relation": "includes",
+          "type": "Artifact",
+          "subtype": "Stone"
+        },
+        {
+          "relation": "includes",
+          "type": "Artifact",
+          "subtype": "Plaster"
+        },
+        {
+          "relation": "includes",
+          "type": "Artifact",
+          "subtype": "Raw_earth"
+        },
+        {
+          "relation": "includes",
+          "type": "Artifact",
+          "subtype": "Bone"
+        },
+        {
+          "relation": "includes",
+          "type": "Artifact",
+          "subtype": "Bone_artifact"
+        },
+        {
+          "relation": "includes",
+          "type": "Artifact",
+          "subtype": "Shell"
+        },
+        {
+          "relation": "includes",
+          "type": "Sample"
+        },
+        {
+          "relation": "includes",
+          "type": "Image"
+        },
+        {
+          "relation": "includes",
+          "type": "Section"
+        },
+        {
+          "relation": "includes",
+          "type": "Sample"
+        }
+      ],
+      "groups": [
+        {
+          "group": "General Section",
+          "labels": {
+            "fr": "Général"
+          },
+          "fields": [
+            {
+              "field": "Identifier",
+              "labels": {
+                "fr": "Numéro",
+                "en": "Number"
+              },
+              "tips": {
+                "fr": "Numéro (N° secteur (1) + 3 chiffres, en numérotation continue : 1.001 à 1.999)",
+                "en": "Number (Sector number (1) + 3 digits, in continuous numbering: 1.001 to 1.999)"
+              }
+            },
+            {
+              "field": "Title",
+              "labels": {
+                "fr": "Identification US",
+                "en": "US identification"
+              },
+              "valuelist": [
+                "Arase",
+                "Arrachement",
+                "Assise",
+                "Base",
+                "Bassin",
+                "Blocage",
+                "Calage",
+                "Canalisation",
+                "Chape",
+                "Citerne",
+                "Colonne",
+                "Comblement",
+                "Creusement",
+                "Dallage",
+                "Dépôt",
+                "Dépotoir",
+                "Drain",
+                "Écroulement",
+                "Élévation",
+                "Empierrement",
+                "Enduit",
+                "Fondation",
+                "Fosse - Comblement",
+                "Fosse - Creusement",
+                "Foyer",
+                "Hors stratigraphie",
+                "Humus",
+                "Indéterminée",
+                "Interface",
+                "Marche",
+                "Massif",
+                "Muret",
+                "Niche",
+                "Niveau de circulation",
+                "Niveau géologique",
+                "Ouverture",
+                "Parement",
+                "Pavage",
+                "Piédroit",
+                "Pilastre",
+                "Pilier",
+                "Placage",
+                "Puisard",
+                "Puits",
+                "Radier",
+                "Recharge",
+                "Récipient",
+                "Remblai",
+                "Remplissage",
+                "Seuil",
+                "Sol",
+                "Sole",
+                "Squelette",
+                "Toiture",
+                "Tranchée de canalisation",
+                "Trottoir",
+                "Trou",
+                "Trou de poteau"
+              ],
+              "multivalue": false
+            },
+            {
+              "field": "Description",
+              "labels": {
+                "fr": "Description",
+                "en": "Description"
+              },
+              "tips": {
+                "fr": "1) nature du sédiment : humus, argile, limon, sable, gravier ; 2) texture (compact/meuble, homogène/hétérogène) ; 3) couleur / pendage ; 4) (pour USC) matériaux / construction (position des assises : régulière / irrégulière) / liant",
+                "en": "1) nature of the sediment: humus, clay, silt, sand, gravel; 2) texture (compact/loose, homogeneous/heterogeneous); 3) color / dip; 4) (for USC) materials / construction (position of the courses: regular / irregular) / binder"
+              },
+              "multiline": "true"
+            },
+            {
+              "field": "Excavators"
+            },
+            {
+              "field": "Authors"
+            },
+            {
+              "field": "DateEarliest"
+            },
+            {
+              "field": "DateLatest"
+            },
+            {
+              "field": "US_type",
+              "labels": {
+                "fr": "Type US",
+                "en": "US Type"
+              },
+              "valuelist": [
+                "US technique",
+                "US positive",
+                "US negative",
+                "US construite"
+              ]
+            },
+            {
+              "field": "Method",
+              "labels": {
+                "fr": "Méthode de fouille",
+                "en": "Digging method"
+              },
+              "valuelist": ["fouille fine", "truelle", "piochon", "pioche"],
+              "multivalue": true
+            },
+            {
+              "field": "Thickness",
+              "labels": {
+                "fr": "Épaisseur",
+                "en": "Thickness"
+              },
+              "tips": {
+                "fr": "Épaisseur de l'US en cm",
+                "en": "Thickness of the US in cm"
+              }
+            },
+            {
+              "field": "Contamination",
+              "labels": {
+                "fr": "Contamination",
+                "en": "Contamination"
+              },
+              "tips": {
+                "fr": "Risque d’intrusions / contaminations",
+                "en": "Intrusion or contamination risk"
+              },
+              "valuelist": ["oui US:", "non"]
+            }
+          ]
+        },
+        {
+          "group": "Comments Section",
+          "labels": {
+            "fr": "Interprétations et observations ",
+            "en": "Comments and interpretations"
+          },
+          "fields": [
+            {
+              "field": "Activity",
+              "labels": {
+                "fr": "Activité US",
+                "en": "Context activity"
+              },
+              "valuelist": [
+                "Abandon",
+                "Aucune",
+                "Construction",
+                "Destruction",
+                "Indéterminée",
+                "Occupation"
+              ]
+            },
+
+            {
+              "field": "Comments",
+              "labels": {
+                "fr": "Observations",
+                "en": "Comments"
+              },
+              "multiline": true
+            }
+          ]
+        },
+
+        {
+          "group": "Relation Section",
+          "labels": {
+            "fr": "Lots, Inv. et autres relations ",
+            "en": "Finds and other relations"
+          },
+          "fields": [
+            {
+              "field": "Relation"
+            }
+          ]
+        },
+        {
+          "group": "Chronology Section",
+          "labels": {
+            "fr": "Chronologie",
+            "en": "Chronology"
+          },
+          "fields": [
+            {
+              "field": "Phase"
+            },
+            {
+              "field": "CoverageTemporal"
+            }
+          ]
+        },
+        {
+          "group": "Location",
+          "labels": {
+            "fr": "Localisation",
+            "en": "Location"
+          },
+          "fields": [
+            {
+              "field": "Source"
+            },
+            {
+              "field": "CoverageSpatial"
+            }
+          ]
+        },
+        {
+          "group": "Attachments",
+          "labels": {
+            "fr": "Photo",
+            "en": "Photo"
+          },
+          "plurals": {
+            "fr": "Photos",
+            "en": "Photos"
+          },
+          "fields": [
+            {
+              "field": "RelationAttachments"
+            }
+          ]
+        },
+        {
+          "group": "Status Section",
+          "labels": {
+            "fr": "Statuts",
+            "en": "Status"
+          },
+          "fields": [
+            {
+              "field": "RightsStatus",
+              "tips": {
+                "fr": "en cours / terminé ",
+                "en": "open / all done"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "Feature",
+      "labels": {
+        "fr": "Fait",
+        "en": "Feature"
+      },
+      "plurals": {
+        "fr": "Faits",
+        "en": "Features"
+      },
+      "relations": [
+        {
+          "relation": "includes",
+          "type": "Context"
+        },
+        {
+          "relation": "includes",
+          "type": "Sample"
+        },
+        {
+          "relation": "includes",
+          "type": "Image"
+        }
+      ],
+      "groups": [
+        {
+          "group": "General Section",
+          "labels": {
+            "fr": "Général",
+            "en": "General"
+          },
+          "fields": [
+            {
+              "field": "Identifier"
+            },
+            {
+              "field": "Title",
+              "labels": {
+                "fr": "Type",
+                "en": "Type"
+              },
+              "valuelist": [
+                "Banquette",
+                "Canalisation",
+                "Colonne",
+                "Cuve",
+                "Dépôt",
+                "Escalier",
+                "Fenêtre",
+                "Four",
+                "Fosse",
+                "Foyer",
+                "Mur",
+                "Porte",
+                "Radier",
+                "Sépulture",
+                "Sol",
+                "Voie"
+              ],
+              "tips": {
+                "fr": "Banquette BQ, Canalisation CN,  Colonne CL,  Cuve CV,   Dépôt DP,  Escalier ES,   Fenêtre FE,   Four FR, Fosse FS, Foyer FY, Mur MR, Porte PR, Radier RA, Sépulture SP,Sol SL,Voie VO",
+                "en": "BQ bench, CN canal, CL column, CV tank, DP deposit, ES stairs, FE window, FR oven, FS pit, FY hearth, MR wall, PR door, RA slab, SP grave, SL floor, VO road"
+              }
+            }
+          ]
+        },
+        {
+          "group": "Description Section",
+          "labels": {
+            "fr": "Description",
+            "en": "Description"
+          },
+          "fields": [
+            {
+              "field": "Description",
+              "labels": {
+                "fr": "Description",
+                "en": "Description"
+              },
+              "multiline": true
+            },
+            {
+              "field": "Length",
+              "labels": {
+                "fr": "L. max",
+                "en": "L max "
+              }
+            },
+            {
+              "field": "Width",
+              "labels": {
+                "fr": "larg. max",
+                "en": "width max"
+              }
+            },
+            {
+              "field": "Height",
+              "labels": {
+                "fr": "h. max",
+                "en": "h max"
+              }
+            },
+            {
+              "field": "Diameter",
+              "labels": {
+                "fr": "diam. max",
+                "en": " diam max"
+              }
+            },
+            {
+              "field": "Interpretations",
+              "labels": {
+                "fr": "Interpretations",
+                "en": "Interpretations"
+              }
+            },
+            {
+              "field": "Comments"
+            }
+          ]
+        },
+        {
+          "group": "Chronology Section",
+          "labels": {
+            "fr": "Chronologie",
+            "it": "Cronologia",
+            "de": "Chronologie",
+            "en": "Chronology"
+          },
+          "fields": [
+            {
+              "field": "Phase"
+            },
+            {
+              "field": "CoverageTemporal"
+            },
+            {
+              "field": "CoverageEarliest"
+            },
+            {
+              "field": "CoverageLatest"
+            }
+          ]
+        },
+        {
+          "group": "Points",
+          "labels": {
+            "fr": "Plan",
+            "en": "Map"
+          },
+          "fields": [
+            {
+              "field": "Source",
+              "labels": {
+                "fr": "Sondage",
+                "en": "Trench"
+              }
+            },
+            {
+              "field": "CoverageSpatial"
+            }
+          ]
+        },
+        {
+          "group": "Attachments",
+          "labels": {
+            "fr": "Photo",
+            "en": "Photo"
+          },
+          "plurals": {
+            "fr": "Photos",
+            "en": "Photos"
+          },
+          "fields": [
+            {
+              "field": "RelationAttachments"
+            }
+          ]
+        },
+
+        {
+          "group": "Relation Section",
+          "labels": {
+            "fr": "Relations",
+            "en": "Relations"
+          },
+          "fields": [
+            {
+              "field": "Relation"
+            }
+          ]
+        },
+        {
+          "group": "Status Section",
+          "labels": {
+            "fr": "Statuts",
+            "en": "Status"
+          },
+          "fields": [
+            {
+              "field": "RightsStatus",
+              "tips": {
+                "fr": "En cours (la structure n'est pas fini d'être fouillée ou documentée); Terminé (la structure est fini d'être documentée); Attention (problème à clarifier)",
+                "en": "open (the feature is under excavation and not documented); All done (the feature is documented); Attention (there is a problem that needs clarification)"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "Feature",
+      "subtype": "ES",
+      "labels": {
+        "fr": "Entité spatiale",
+        "en": "Spatial entity"
+      },
+      "plurals": {
+        "fr": "ES Entités spatiales",
+        "en": "Spatial entities"
+      },
+      "relations": [
+        {
+          "relation": "includes",
+          "type": "Feature"
+        },
+        {
+          "relation": "includes",
+          "type": "Context"
+        },
+        {
+          "relation": "includes",
+          "type": "Image"
+        }
+      ],
+      "groups": [
+        {
+          "group": "General Section",
+          "labels": {
+            "fr": "Général",
+            "en": "General"
+          },
+          "fields": [
+            {
+              "field": "Identifier",
+              "labels": {
+                "fr": "Numéro ES",
+                "en": "Spatial entity number"
+              }
+            },
+            {
+              "field": "Researchers",
+              "labels": {
+                "fr": "Chercheurs",
+                "en": "Researchers"
+              },
+              "valuelist": [],
+              "multivalue": true
+            }
+          ]
+        },
+        {
+          "group": "Attachments",
+          "labels": {
+            "fr": "Photo",
+            "en": "Photo"
+          },
+          "plurals": {
+            "fr": "Photos",
+            "en": "Photos"
+          },
+          "fields": [
+            {
+              "field": "RelationAttachments"
+            }
+          ]
+        },
+        {
+          "group": "Description Section",
+          "labels": {
+            "fr": "Description",
+            "en": "Description"
+          },
+          "fields": [
+            {
+              "field": "Title",
+              "labels": {
+                "fr": "ES titre",
+                "en": "ES title"
+              },
+              "tips": {
+                "fr": "Apparait en titre, type d'entité spatiale ex: bâtiment, pièce, zone géographique, ensemble de blocs errants",
+                "en": "Spatial entity type, e.g. building, room, geographical area, group of erratic blocks"
+              },
+              "valuelist": []
+            },
+            {
+              "field": "Fonction",
+              "labels": {
+                "fr": "Fonction",
+                "en": "Function"
+              },
+              "valuelist": [
+                "Civile",
+                "Domestique",
+                "Funéraire",
+                "Militaire",
+                "Sportive",
+                "Culturelle",
+                "Production",
+                "Religieuse",
+                "Transport",
+                "Voirie",
+                "Autre"
+              ]
+            },
+            {
+              "field": "Building_Type",
+              "labels": {
+                "fr": "Type ES",
+                "en": "ES Type"
+              },
+              "valuelist": [
+                "maison",
+                "courtine",
+                "tour",
+                "palestre",
+                "fontaine",
+                "temple",
+                "monument funéraire",
+                "oikos",
+                "portique",
+                "propylon",
+                "hestiatorion",
+                "autre"
+              ],
+              "multitype": true
+            },
+            {
+              "field": "Description"
+            }
+          ]
+        },
+        {
+          "group": "Points",
+          "labels": {
+            "fr": "Plan",
+            "it": "Pianta",
+            "de": "Plan",
+            "en": "Mapping",
+            "el": ""
+          },
+          "fields": [
+            {
+              "field": "CoverageSpatial"
+            }
+          ]
+        },
+        {
+          "group": "Relation Section",
+          "labels": {
+            "fr": "Relations",
+            "en": "Relations"
+          },
+          "fields": [
+            {
+              "field": "Relation"
+            }
+          ]
+        },
+        {
+          "group": "Status Section",
+          "labels": {
+            "fr": "Statuts",
+            "en": "Status"
+          },
+          "fields": [
+            {
+              "field": "RightsStatus",
+              "tips": {
+                "fr": "En cours (la structure n'est pas fini d'être fouillée ou documentée); Terminé (la structure est fini d'être documentée); Attention (problème à clarifier)",
+                "en": "open (the feature is under excavation and not documented); All done (the feature is documented); Attention (there is a problem that needs clarification)"
+              }
+            }
+          ]
+        }
+      ]
+    },
+
+    {
+      "type": "Artifact",
+      "labels": {
+        "fr": "Mobilier",
+        "en": "Artifact"
+      },
+      "plurals": {
+        "fr": "Mobiliers",
+        "en": "Artifacts"
+      },
+      "relations": [
+        {
+          "relation": "includes",
+          "type": "Image"
+        },
+        {
+          "relation": "includes",
+          "type": "Sample"
+        },
+        {
+          "relation": "includes",
+          "type": "Artifact"
+        },
+        {
+          "relation": "belongs to",
+          "type": "Group",
+          "subtype": "Storage"
+        }
+      ],
+      "groups": [
+        {
+          "group": "General Section",
+          "labels": {
+            "fr": "Général",
+            "en": "General"
+          },
+          "fields": [
+            {
+              "field": "Identifier"
+            },
+            {
+              "field": "Title",
+              "labels": {
+                "fr": "Identification",
+                "en": "Identification"
+              }
+            },
+            {
+              "field": "Description"
+            },
+            {
+              "field": "Material"
+            },
+
+            {
+              "field": "NMI"
+            },
+            {
+              "field": "NR"
+            },
+            {
+              "field": "Weight"
+            }
+          ]
+        },
+        {
+          "group": "Chronology Section",
+          "labels": {
+            "fr": "Chronologie",
+            "en": "Chronology"
+          },
+          "fields": [
+            {
+              "field": "Phase"
+            },
+            {
+              "field": "CoverageTemporal"
+            }
+          ]
+        },
+        {
+          "group": "Points",
+          "labels": {
+            "fr": "Localisation",
+            "en": "Mapping"
+          },
+          "fields": [
+            {
+              "field": "Source"
+            },
+            {
+              "field": "CoverageSpatial"
+            }
+          ]
+        },
+        {
+          "group": "Relation Section",
+          "labels": {
+            "fr": "Relations",
+            "en": "Relations"
+          },
+          "fields": [
+            {
+              "field": "Relation"
+            }
+          ]
+        },
+        {
+          "group": "Attachments",
+          "labels": {
+            "fr": "Photo",
+            "en": "Photo"
+          },
+          "plurals": {
+            "fr": "Photos",
+            "en": "Photos"
+          },
+          "fields": [
+            {
+              "field": "RelationAttachments"
+            }
+          ]
+        },
+        {
+          "group": "Status Section",
+          "labels": {
+            "fr": "Statuts",
+            "en": "Status"
+          },
+          "fields": [
+            {
+              "field": "RightsStatus",
+              "labels": {
+                "fr": "conservation",
+                "en": "observation"
+              },
+              "valuelist": ["fait"],
+              "tips": {
+                "fr": "On utilisera ici uniquement les statuts suivants: conservation (l'objet est en restauration); All done (l'objet a été restauré et est rangé); Attention (problème à clarifier)",
+                "en": "Only the following status must be used here: conservation (the artifact is being restored); All done (the artifact is restored and stored); Attention (there is a problem that needs clarification)"
+              }
+            },
+            {
+              "field": "Observation",
+              "labels": {
+                "fr": "Observation conservation",
+                "en": "Conservation observation"
+              }
+            },
+            {
+              "field": "Drawing",
+              "labels": {
+                "fr": "Dessin",
+                "en": "Drawing"
+              },
+              "valuelist": ["fait", "à faire"]
+            },
+            {
+              "field": "Photo",
+              "labels": {
+                "fr": "Photo",
+                "en": "Photo"
+              },
+              "valuelist": ["fait", "à faire"]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "Artifact",
+      "subtype": "Lot",
+      "labels": {
+        "fr": "Lot",
+        "en": "Finds lot"
+      },
+      "plurals": {
+        "fr": "Lots",
+        "en": "Finds lots"
+      },
+      "relations": [
+        {
+          "relation": "includes",
+          "type": "Image"
+        },
+        {
+          "relation": "includes",
+          "type": "Sample"
+        },
+        {
+          "relation": "includes",
+          "type": "Artifact"
+        },
+        {
+          "relation": "belongs to",
+          "type": "Group",
+          "subtype": "Storage"
+        }
+      ],
+      "groups": [
+        {
+          "group": "General Section",
+          "labels": {
+            "fr": "Général",
+            "en": "General"
+          },
+          "fields": [
+            {
+              "field": "Identifier"
+            },
+            {
+              "field": "Title",
+              "labels": {
+                "fr": "Identification",
+                "en": "Identification"
+              },
+              "valuelist": [
+                "Céram - 001",
+                "Os - 002",
+                "Charbons - 003",
+                "Coquillages - 004",
+                "Enduit - 005",
+                "Obsidienne - 006",
+                "Terre crue - 007"
+              ]
+            },
+            {
+              "field": "Description"
+            },
+            {
+              "field": "Material"
+            },
+
+            {
+              "field": "NMI"
+            },
+            {
+              "field": "NR"
+            },
+            {
+              "field": "Weight"
+            }
+          ]
+        },
+        {
+          "group": "Chronology Section",
+          "labels": {
+            "fr": "Chronologie",
+            "en": "Chronology"
+          },
+          "fields": [
+            {
+              "field": "Phase"
+            },
+            {
+              "field": "CoverageTemporal"
+            }
+          ]
+        },
+        {
+          "group": "Points",
+          "labels": {
+            "fr": "Localisation",
+            "en": "Mapping"
+          },
+          "fields": [
+            {
+              "field": "Source"
+            },
+            {
+              "field": "CoverageSpatial"
+            }
+          ]
+        },
+        {
+          "group": "Relation Section",
+          "labels": {
+            "fr": "Relations",
+            "en": "Relations"
+          },
+          "fields": [
+            {
+              "field": "Relation"
+            }
+          ]
+        },
+        {
+          "group": "Attachments",
+          "labels": {
+            "fr": "Photo",
+            "en": "Photo"
+          },
+          "plurals": {
+            "fr": "Photos",
+            "en": "Photos"
+          },
+          "fields": [
+            {
+              "field": "RelationAttachments"
+            }
+          ]
+        },
+        {
+          "group": "Status Section",
+          "labels": {
+            "fr": "Statuts",
+            "en": "Status"
+          },
+          "fields": [
+            {
+              "field": "RightsStatus",
+              "labels": {
+                "fr": "conservation",
+                "en": "observation"
+              },
+              "valuelist": ["fait"],
+              "tips": {
+                "fr": "On utilisera ici uniquement les statuts suivants: conservation (l'objet est en restauration); All done (l'objet a été restauré et est rangé); Attention (problème à clarifier)",
+                "en": "Only the following status must be used here: conservation (the artifact is being restored); All done (the artifact is restored and stored); Attention (there is a problem that needs clarification)"
+              }
+            },
+            {
+              "field": "Observation",
+              "labels": {
+                "fr": "Observation conservation",
+                "en": "Conservation observation"
+              }
+            },
+            {
+              "field": "Drawing",
+              "labels": {
+                "fr": "Dessin",
+                "en": "Drawing"
+              },
+              "valuelist": ["fait", "à faire"]
+            },
+            {
+              "field": "Photo",
+              "labels": {
+                "fr": "Photo",
+                "en": "Photo"
+              },
+              "valuelist": ["fait", "à faire"]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "Artifact",
+      "subtype": "Pottery",
+      "labels": {
+        "fr": "Vase céramique",
+        "en": "Pot"
+      },
+      "plurals": {
+        "fr": "Vases céramiques",
+        "en": "Pots"
+      },
+      "relations": [
+        {
+          "relation": "includes",
+          "type": "Image"
+        },
+        {
+          "relation": "includes",
+          "type": "Sample"
+        },
+        {
+          "relation": "includes",
+          "type": "Artifact"
+        },
+        {
+          "relation": "belongs to",
+          "type": "Group",
+          "subtype": "Storage"
+        }
+      ],
+      "groups": [
+        {
+          "group": "General Section",
+          "labels": {
+            "fr": "Général",
+            "en": "General"
+          },
+          "fields": [
+            {
+              "field": "Identifier"
+            },
+            {
+              "field": "Title",
+              "labels": {
+                "fr": "Identification",
+                "en": "Identification"
+              },
+              "valuelist": [
+                "amphore",
+                "amphoriskos",
+                "askos",
+                "assiette",
+                "bol",
+                "bol hémisphérique",
+                "bol ogival",
+                "bol profond",
+                "broc",
+                "broc ou marmite",
+                "broc tripode",
+                "calatharaki",
+                "calathos",
+                "calice",
+                "compotier",
+                "coquetier",
+                "coupelle",
+                "coupelle conique",
+                "couvercle",
+                "cratère",
+                "cratère amphoroïde",
+                "cratère en cloche",
+                "cruche",
+                "cruche à bec dressé",
+                "cruche à bec ponté",
+                "cruche miniature",
+                "cruche trilobée",
+                "cruche tripode miniature",
+                "cuvette",
+                "égouttoir/passoire/filtreur",
+                "gobelet",
+                "gobelet sur pied (coupe à champagne)",
+                "gobelet tronconique",
+                "indéterminé",
+                "jarre",
+                "jarre à bec ponté",
+                "jarre cylindrique",
+                "jarre miniature",
+                "jarre ou cruche à bec ponté",
+                "jarre ovoïde",
+                "jarre pithoïde",
+                "jarre tripode",
+                "jarre-broc",
+                "jarre-marmite",
+                "kylix",
+                "larnax",
+                "marmite",
+                "marmite tripode",
+                "pitharaki",
+                "pithos",
+                "plat",
+                "plat à bord rentré",
+                "plat à cuire (cooking dish)",
+                "plateau",
+                "plateau tripode",
+                "porte-brochettes",
+                "pyxide",
+                "rhyton",
+                "rhyton conique",
+                "rhyton globulaire",
+                "rhyton zoomorphe",
+                "support cylindrique",
+                "tasse",
+                "tasse à anse interne",
+                "tasse basse",
+                "tasse carénée",
+                "tasse convexe",
+                "tasse droite",
+                "tasse galbée",
+                "tasse hémisphérique",
+                "tasse profonde",
+                "tasse tripode",
+                "tasse tronconique",
+                "vase à étrier",
+                "vase à étrier de transport",
+                "vase à étrier globulaire à base plate",
+                "vase à étrier piriforme",
+                "vase à étrier trapu",
+                "vase de Chamaizi",
+                "vase miniature"
+              ],
+              "tips": {
+                "fr": "Identification de l'objet (forme pour les céramiques)",
+                "en": "Identification of the object"
+              }
+            },
+            {
+              "field": "Description"
+            },
+            {
+              "field": "Material"
+            },
+
+            {
+              "field": "State",
+              "labels": {
+                "fr": "État de conservation",
+                "en": "State of conservation"
+              },
+              "valuelist": ["fragmentaire", "complet"]
+            },
+            {
+              "field": "Format",
+              "labels": {
+                "fr": "Dimensions",
+                "en": "Format"
+              },
+              "multiline": true,
+              "tips": {
+                "fr": "H., L, larg., épais., diam., poids",
+                "en": "H., L, width, thick., diam., weight"
+              }
+            },
+            {
+              "field": "NMI"
+            },
+            {
+              "field": "NR"
+            },
+            {
+              "field": "Weight"
+            }
+          ]
+        },
+        {
+          "group": "Chronology Section",
+          "labels": {
+            "fr": "Chronologie",
+            "en": "Chronology"
+          },
+          "fields": [
+            {
+              "field": "Phase"
+            },
+            {
+              "field": "CoverageTemporal"
+            }
+          ]
+        },
+        {
+          "group": "Attachments",
+          "labels": {
+            "fr": "Photo",
+            "en": "Photo"
+          },
+          "plurals": {
+            "fr": "Photos",
+            "en": "Photos"
+          },
+          "fields": [
+            {
+              "field": "RelationAttachments"
+            }
+          ]
+        },
+        {
+          "group": "Points",
+          "labels": {
+            "fr": "Localisation",
+            "en": "Mapping"
+          },
+          "fields": [
+            {
+              "field": "Source"
+            },
+            {
+              "field": "CoverageSpatial"
+            }
+          ]
+        },
+        {
+          "group": "Relation Section",
+          "labels": {
+            "fr": "Relations",
+            "en": "Relations"
+          },
+          "fields": [
+            {
+              "field": "Relation"
+            }
+          ]
+        },
+        {
+          "group": "Status Section",
+          "labels": {
+            "fr": "Statuts",
+            "en": "Status"
+          },
+          "fields": [
+            {
+              "field": "RightsStatus",
+              "labels": {
+                "fr": "conservation",
+                "en": "observation"
+              },
+              "valuelist": ["fait"],
+              "tips": {
+                "fr": "On utilisera ici uniquement les statuts suivants: conservation (l'objet est en restauration); All done (l'objet a été restauré et est rangé); Attention (problème à clarifier)",
+                "en": "Only the following status must be used here: conservation (the artifact is being restored); All done (the artifact is restored and stored); Attention (there is a problem that needs clarification)"
+              }
+            },
+            {
+              "field": "Observation",
+              "labels": {
+                "fr": "Observation conservation",
+                "en": "Conservation observation"
+              }
+            },
+            {
+              "field": "Drawing",
+              "labels": {
+                "fr": "Dessin",
+                "en": "Drawing"
+              },
+              "valuelist": ["fait", "à faire"]
+            },
+            {
+              "field": "Photo",
+              "labels": {
+                "fr": "Photo",
+                "en": "Photo"
+              },
+              "valuelist": ["fait", "à faire"]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "Artifact",
+      "subtype": "Lamp",
+      "labels": {
+        "fr": "Lampe, objet de combustion",
+        "en": "Lamp"
+      },
+      "plurals": {
+        "fr": "Lampes et objets de combustion",
+        "en": "Lamps"
+      },
+      "relations": [
+        {
+          "relation": "includes",
+          "type": "Image"
+        },
+        {
+          "relation": "includes",
+          "type": "Sample"
+        },
+        {
+          "relation": "includes",
+          "type": "Artifact"
+        },
+        {
+          "relation": "belongs to",
+          "type": "Group",
+          "subtype": "Storage"
+        }
+      ],
+      "groups": [
+        {
+          "group": "General Section",
+          "labels": {
+            "fr": "Général",
+            "en": "General"
+          },
+          "fields": [
+            {
+              "field": "Identifier"
+            },
+            {
+              "field": "Title",
+              "labels": {
+                "fr": "Identification",
+                "en": "Identification"
+              },
+              "valuelist": [
+                "Boite à feu",
+                "Brûleur à encens",
+                "Chenet",
+                "Creuset",
+                "Dalle foyère",
+                "lampadaire",
+                "pelle à feu",
+                "tuyère"
+              ],
+              "tips": {
+                "fr": "Identification de l'objet",
+                "en": "Identification of the object"
+              }
+            },
+            {
+              "field": "Description"
+            },
+            {
+              "field": "Material"
+            },
+
+            {
+              "field": "State",
+              "labels": {
+                "fr": "État de conservation",
+                "en": "State of conservation"
+              },
+              "valuelist": ["fragmentaire", "complet"]
+            },
+            {
+              "field": "Format",
+              "labels": {
+                "fr": "Dimensions",
+                "en": "Format"
+              },
+              "multiline": true,
+              "tips": {
+                "fr": "H., L, larg., épais., diam., poids",
+                "en": "H., L, width, thick., diam., weight"
+              }
+            },
+            {
+              "field": "NMI"
+            },
+            {
+              "field": "NR"
+            },
+            {
+              "field": "Weight"
+            }
+          ]
+        },
+        {
+          "group": "Chronology Section",
+          "labels": {
+            "fr": "Chronologie",
+            "en": "Chronology"
+          },
+          "fields": [
+            {
+              "field": "Phase"
+            },
+            {
+              "field": "CoverageTemporal"
+            }
+          ]
+        },
+        {
+          "group": "Attachments",
+          "labels": {
+            "fr": "Photo",
+            "en": "Photo"
+          },
+          "plurals": {
+            "fr": "Photos",
+            "en": "Photos"
+          },
+          "fields": [
+            {
+              "field": "RelationAttachments"
+            }
+          ]
+        },
+        {
+          "group": "Points",
+          "labels": {
+            "fr": "Localisation",
+            "en": "Mapping"
+          },
+          "fields": [
+            {
+              "field": "Source"
+            },
+            {
+              "field": "CoverageSpatial"
+            }
+          ]
+        },
+        {
+          "group": "Relation Section",
+          "labels": {
+            "fr": "Relations",
+            "en": "Relations"
+          },
+          "fields": [
+            {
+              "field": "Relation"
+            }
+          ]
+        },
+        {
+          "group": "Status Section",
+          "labels": {
+            "fr": "Statuts",
+            "en": "Status"
+          },
+          "fields": [
+            {
+              "field": "RightsStatus",
+              "labels": {
+                "fr": "Conservation",
+                "en": "Conservation"
+              },
+              "valuelist": ["fait"],
+              "tips": {
+                "fr": "On utilisera ici uniquement les statuts suivants: conservation (l'objet est en restauration); All done (l'objet a été restauré et est rangé); Attention (problème à clarifier)",
+                "en": "Only the following status must be used here: conservation (the artifact is being restored); All done (the artifact is restored and stored); Attention (there is a problem that needs clarification)"
+              }
+            },
+            {
+              "field": "Observation",
+              "labels": {
+                "fr": "Observation conservation",
+                "en": "Conservation observation"
+              }
+            },
+            {
+              "field": "Drawing",
+              "labels": {
+                "fr": "Dessin",
+                "en": "Drawing"
+              },
+              "valuelist": ["fait", "à faire"]
+            },
+            {
+              "field": "Photo",
+              "labels": {
+                "fr": "Photo",
+                "en": "Pphoto"
+              },
+              "valuelist": ["fait", "à faire"]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "Artifact",
+      "subtype": "Terracotta",
+      "labels": {
+        "fr": "Terre cuite autre",
+        "en": "Terracotta other"
+      },
+      "plurals": {
+        "fr": "Terres cuites autres",
+        "en": "Terracotta other"
+      },
+      "tips": {
+        "fr": "terre-cuites architecturales et petits objets",
+        "en": "arch terracotta and small objects"
+      },
+      "relations": [
+        {
+          "relation": "includes",
+          "type": "Image"
+        },
+        {
+          "relation": "includes",
+          "type": "Sample"
+        },
+        {
+          "relation": "includes",
+          "type": "Artifact"
+        },
+        {
+          "relation": "belongs to",
+          "type": "Group",
+          "subtype": "Storage"
+        }
+      ],
+      "groups": [
+        {
+          "group": "General Section",
+          "labels": {
+            "fr": "Général",
+            "en": "General"
+          },
+          "fields": [
+            {
+              "field": "Identifier"
+            },
+            {
+              "field": "Type",
+              "labels": {
+                "fr": "Catégorie",
+                "en": "Category"
+              }
+            },
+            {
+              "field": "Description"
+            },
+            {
+              "field": "Material"
+            },
+
+            {
+              "field": "Title",
+              "labels": {
+                "fr": "Identification",
+                "en": "Identification"
+              },
+
+              "valuelist": [
+                "Bille",
+                "Bobine",
+                "Canalisation",
+                "Dalle",
+                "Figurine",
+                "Fusaïole",
+                "Indéterminé",
+                "Peson",
+                "Tablette"
+              ]
+            },
+
+            {
+              "field": "State",
+              "labels": {
+                "fr": "État de conservation",
+                "en": "State of conservation"
+              },
+              "valuelist": ["fragmentaire", "complet"]
+            },
+            {
+              "field": "Format",
+              "labels": {
+                "fr": "Dimensions",
+                "en": "Format"
+              },
+              "multiline": true,
+              "tips": {
+                "fr": "H., L, larg., épais., diam., poids",
+                "en": "H., L, width, thick., diam., weight"
+              }
+            },
+            {
+              "field": "NMI"
+            },
+            {
+              "field": "NR"
+            },
+            {
+              "field": "Weight"
+            }
+          ]
+        },
+        {
+          "group": "Chronology Section",
+          "labels": {
+            "fr": "Chronologie",
+            "en": "Chronology"
+          },
+          "fields": [
+            {
+              "field": "Phase"
+            },
+            {
+              "field": "CoverageTemporal"
+            }
+          ]
+        },
+        {
+          "group": "Attachments",
+          "labels": {
+            "fr": "Photo",
+            "en": "Photo"
+          },
+          "plurals": {
+            "fr": "Photos",
+            "en": "Photos"
+          },
+          "fields": [
+            {
+              "field": "RelationAttachments"
+            }
+          ]
+        },
+        {
+          "group": "Points",
+          "labels": {
+            "fr": "Localisation",
+            "en": "Mapping"
+          },
+          "fields": [
+            {
+              "field": "Source"
+            },
+            {
+              "field": "CoverageSpatial"
+            }
+          ]
+        },
+        {
+          "group": "Relation Section",
+          "labels": {
+            "fr": "Relations",
+            "en": "Relations"
+          },
+          "fields": [
+            {
+              "field": "Relation"
+            }
+          ]
+        },
+        {
+          "group": "Status Section",
+          "labels": {
+            "fr": "Statuts",
+            "en": "Status"
+          },
+          "fields": [
+            {
+              "field": "RightsStatus",
+              "labels": {
+                "fr": "conservation",
+                "en": "observation"
+              },
+              "valuelist": ["fait"],
+              "tips": {
+                "fr": "On utilisera ici uniquement les statuts suivants: conservation (l'objet est en restauration); All done (l'objet a été restauré et est rangé); Attention (problème à clarifier)",
+                "en": "Only the following status must be used here: conservation (the artifact is being restored); All done (the artifact is restored and stored); Attention (there is a problem that needs clarification)"
+              }
+            },
+            {
+              "field": "Observation",
+              "labels": {
+                "fr": "Observation conservation",
+                "en": "Conservation observation"
+              }
+            },
+            {
+              "field": "Drawing",
+              "labels": {
+                "fr": "Dessin",
+                "en": "Drawing"
+              },
+              "valuelist": ["fait", "à faire"]
+            },
+            {
+              "field": "Photo",
+              "labels": {
+                "fr": "Photo",
+                "en": "Photo"
+              },
+              "valuelist": ["fait", "à faire"]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "Artifact",
+      "subtype": "Bronze",
+      "labels": {
+        "fr": "Bronze",
+        "en": "Bronze"
+      },
+      "plurals": {
+        "fr": "Bronzes",
+        "en": "Bronzes"
+      },
+      "relations": [
+        {
+          "relation": "includes",
+          "type": "Image"
+        },
+        {
+          "relation": "includes",
+          "type": "Sample"
+        },
+        {
+          "relation": "includes",
+          "type": "Artifact"
+        },
+        {
+          "relation": "belongs to",
+          "type": "Group",
+          "subtype": "Storage"
+        }
+      ],
+      "groups": [
+        {
+          "group": "General Section",
+          "labels": {
+            "fr": "Général",
+            "en": "General"
+          },
+          "fields": [
+            {
+              "field": "Identifier"
+            },
+            {
+              "field": "Title",
+              "labels": {
+                "fr": "Identification",
+                "en": "Identification"
+              },
+              "valuelist": [
+                "Aiguille",
+                "Anneau",
+                "Bague",
+                "Boucle",
+                "Chaîne",
+                "Clou",
+                "Epingle",
+                "Indéterminé",
+                "Lame",
+                "Perle",
+                "Plaque",
+                "Poids",
+                "Poinçon",
+                "Pointe",
+                "Scories",
+                "Spatule",
+                "Tige"
+              ]
+            },
+            {
+              "field": "Description"
+            },
+            {
+              "field": "Material"
+            },
+
+            {
+              "field": "State",
+              "labels": {
+                "fr": "État de conservation",
+                "en": "State of conservation"
+              },
+              "valuelist": ["fragmentaire", "complet"]
+            },
+            {
+              "field": "Format",
+              "labels": {
+                "fr": "Dimensions",
+                "en": "Format"
+              },
+              "multiline": true,
+              "tips": {
+                "fr": "H., L, larg., épais., diam., poids",
+                "en": "H., L, width, thick., diam., weight"
+              }
+            },
+            {
+              "field": "NMI"
+            },
+            {
+              "field": "NR"
+            },
+            {
+              "field": "Weight"
+            }
+          ]
+        },
+        {
+          "group": "Chronology Section",
+          "labels": {
+            "fr": "Chronologie",
+            "en": "Chronology"
+          },
+          "fields": [
+            {
+              "field": "Phase"
+            },
+            {
+              "field": "CoverageTemporal"
+            }
+          ]
+        },
+        {
+          "group": "Attachments",
+          "labels": {
+            "fr": "Photo",
+            "en": "Photo"
+          },
+          "plurals": {
+            "fr": "Photos",
+            "en": "Photos"
+          },
+          "fields": [
+            {
+              "field": "RelationAttachments"
+            }
+          ]
+        },
+        {
+          "group": "Points",
+          "labels": {
+            "fr": "Localisation",
+            "en": "Mapping"
+          },
+          "fields": [
+            {
+              "field": "Source"
+            },
+            {
+              "field": "CoverageSpatial"
+            }
+          ]
+        },
+        {
+          "group": "Relation Section",
+          "labels": {
+            "fr": "Relations",
+            "en": "Relations"
+          },
+          "fields": [
+            {
+              "field": "Relation"
+            }
+          ]
+        },
+        {
+          "group": "Status Section",
+          "labels": {
+            "fr": "Statuts",
+            "en": "Status"
+          },
+          "fields": [
+            {
+              "field": "RightsStatus",
+              "labels": {
+                "fr": "conservation",
+                "en": "observation"
+              },
+              "valuelist": ["fait"],
+              "tips": {
+                "fr": "On utilisera ici uniquement les statuts suivants: conservation (l'objet est en restauration); All done (l'objet a été restauré et est rangé); Attention (problème à clarifier)",
+                "en": "Only the following status must be used here: conservation (the artifact is being restored); All done (the artifact is restored and stored); Attention (there is a problem that needs clarification)"
+              }
+            },
+            {
+              "field": "Observation",
+              "labels": {
+                "fr": "Observation conservation",
+                "en": "Conservation observation"
+              }
+            },
+            {
+              "field": "Drawing",
+              "labels": {
+                "fr": "Dessin",
+                "en": "Drawing"
+              },
+              "valuelist": ["fait", "à faire"]
+            },
+            {
+              "field": "Photo",
+              "labels": {
+                "fr": "Photo",
+                "en": "Photo"
+              },
+              "valuelist": ["fait", "à faire"]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "Artifact",
+      "subtype": "Metal",
+      "labels": {
+        "fr": "Métal autre",
+        "en": "Metal other"
+      },
+      "plurals": {
+        "fr": "Métaux",
+        "en": "Metals"
+      },
+      "relations": [
+        {
+          "relation": "includes",
+          "type": "Image"
+        },
+        {
+          "relation": "includes",
+          "type": "Sample"
+        },
+        {
+          "relation": "includes",
+          "type": "Artifact"
+        },
+        {
+          "relation": "belongs to",
+          "type": "Group",
+          "subtype": "Storage"
+        }
+      ],
+      "groups": [
+        {
+          "group": "General Section",
+          "labels": {
+            "fr": "Général",
+            "en": "General"
+          },
+          "fields": [
+            {
+              "field": "Identifier"
+            },
+            {
+              "field": "Title",
+              "labels": {
+                "fr": "Identification",
+                "en": "Identification"
+              },
+              "valuelist": [
+                "Nucléus",
+                "Eclat",
+                "Lame/lamelle",
+                "Perle",
+                "Indéterminé"
+              ]
+            },
+            {
+              "field": "Description"
+            },
+            {
+              "field": "Material"
+            },
+
+            {
+              "field": "State",
+              "labels": {
+                "fr": "État de conservation",
+                "en": "State of conservation"
+              },
+              "valuelist": ["fragmentaire", "complet"]
+            },
+            {
+              "field": "Format",
+              "labels": {
+                "fr": "Dimensions",
+                "en": "Format"
+              },
+              "multiline": true,
+              "tips": {
+                "fr": "H., L, larg., épais., diam., poids",
+                "en": "H., L, width, thick., diam., weight"
+              }
+            },
+            {
+              "field": "NMI"
+            },
+            {
+              "field": "NR"
+            },
+            {
+              "field": "Weight"
+            }
+          ]
+        },
+        {
+          "group": "Chronology Section",
+          "labels": {
+            "fr": "Chronologie",
+            "en": "Chronology"
+          },
+          "fields": [
+            {
+              "field": "Phase"
+            },
+            {
+              "field": "CoverageTemporal"
+            }
+          ]
+        },
+        {
+          "group": "Attachments",
+          "labels": {
+            "fr": "Photo",
+            "en": "Photo"
+          },
+          "plurals": {
+            "fr": "Photos",
+            "en": "Photos"
+          },
+          "fields": [
+            {
+              "field": "RelationAttachments"
+            }
+          ]
+        },
+        {
+          "group": "Points",
+          "labels": {
+            "fr": "Localisation",
+            "en": "Mapping"
+          },
+          "fields": [
+            {
+              "field": "Source"
+            },
+            {
+              "field": "CoverageSpatial"
+            }
+          ]
+        },
+        {
+          "group": "Relation Section",
+          "labels": {
+            "fr": "Relations",
+            "en": "Relations"
+          },
+          "fields": [
+            {
+              "field": "Relation"
+            }
+          ]
+        },
+        {
+          "group": "Status Section",
+          "labels": {
+            "fr": "Statuts",
+            "en": "Status"
+          },
+          "fields": [
+            {
+              "field": "RightsStatus",
+              "labels": {
+                "fr": "conservation",
+                "en": "observation"
+              },
+              "valuelist": ["fait"],
+              "tips": {
+                "fr": "On utilisera ici uniquement les statuts suivants: conservation (l'objet est en restauration); All done (l'objet a été restauré et est rangé); Attention (problème à clarifier)",
+                "en": "Only the following status must be used here: conservation (the artifact is being restored); All done (the artifact is restored and stored); Attention (there is a problem that needs clarification)"
+              }
+            },
+            {
+              "field": "Observation",
+              "labels": {
+                "fr": "Observation conservation",
+                "en": "Conservation observation"
+              }
+            },
+            {
+              "field": "Drawing",
+              "labels": {
+                "fr": "Dessin",
+                "en": "Drawing"
+              },
+              "valuelist": ["fait", "à faire"]
+            },
+            {
+              "field": "Photo",
+              "labels": {
+                "fr": "Photo",
+                "en": "Photo"
+              },
+              "valuelist": ["fait", "à faire"]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "Artifact",
+      "subtype": "Obsidian",
+      "labels": {
+        "fr": "Obsidienne ou pierre taillée",
+        "en": "Obsidian and chipped stone"
+      },
+      "plurals": {
+        "fr": "Obsidiennes et pierres taillées",
+        "en": "Obsidians and chipped stones"
+      },
+      "relations": [
+        {
+          "relation": "includes",
+          "type": "Image"
+        },
+        {
+          "relation": "includes",
+          "type": "Sample"
+        },
+        {
+          "relation": "includes",
+          "type": "Artifact"
+        },
+        {
+          "relation": "belongs to",
+          "type": "Group",
+          "subtype": "Storage"
+        }
+      ],
+      "groups": [
+        {
+          "group": "General Section",
+          "labels": {
+            "fr": "Général",
+            "en": "General"
+          },
+          "fields": [
+            {
+              "field": "Identifier"
+            },
+            {
+              "field": "Title",
+              "labels": {
+                "fr": "Identification",
+                "en": "Identification"
+              },
+              "valuelist": ["Nucléus", "Eclat", "Lame/lamelle"]
+            },
+            {
+              "field": "Description"
+            },
+            {
+              "field": "Material"
+            },
+
+            {
+              "field": "State",
+              "labels": {
+                "fr": "État de conservation",
+                "en": "State of conservation"
+              },
+              "valuelist": ["fragmentaire", "complet"]
+            },
+            {
+              "field": "Format",
+              "labels": {
+                "fr": "Dimensions",
+                "en": "Format"
+              },
+              "multiline": true,
+              "tips": {
+                "fr": "H., L, larg., épais., diam., poids",
+                "en": "H., L, width, thick., diam., weight"
+              }
+            },
+            {
+              "field": "NMI"
+            },
+            {
+              "field": "NR"
+            },
+            {
+              "field": "Weight"
+            }
+          ]
+        },
+        {
+          "group": "Chronology Section",
+          "labels": {
+            "fr": "Chronologie",
+            "en": "Chronology"
+          },
+          "fields": [
+            {
+              "field": "Phase"
+            },
+            {
+              "field": "CoverageTemporal"
+            }
+          ]
+        },
+        {
+          "group": "Attachments",
+          "labels": {
+            "fr": "Photo",
+            "en": "Photo"
+          },
+          "plurals": {
+            "fr": "Photos",
+            "en": "Photos"
+          },
+          "fields": [
+            {
+              "field": "RelationAttachments"
+            }
+          ]
+        },
+        {
+          "group": "Points",
+          "labels": {
+            "fr": "Localisation",
+            "en": "Mapping"
+          },
+          "fields": [
+            {
+              "field": "Source"
+            },
+            {
+              "field": "CoverageSpatial"
+            }
+          ]
+        },
+        {
+          "group": "Relation Section",
+          "labels": {
+            "fr": "Relations",
+            "en": "Relations"
+          },
+          "fields": [
+            {
+              "field": "Relation"
+            }
+          ]
+        },
+        {
+          "group": "Status Section",
+          "labels": {
+            "fr": "Statuts",
+            "en": "Status"
+          },
+          "fields": [
+            {
+              "field": "RightsStatus",
+              "labels": {
+                "fr": "conservation",
+                "en": "observation"
+              },
+              "valuelist": ["fait"],
+              "tips": {
+                "fr": "On utilisera ici uniquement les statuts suivants: conservation (l'objet est en restauration); All done (l'objet a été restauré et est rangé); Attention (problème à clarifier)",
+                "en": "Only the following status must be used here: conservation (the artifact is being restored); All done (the artifact is restored and stored); Attention (there is a problem that needs clarification)"
+              }
+            },
+            {
+              "field": "Observation",
+              "labels": {
+                "fr": "Observation conservation",
+                "en": "Conservation observation"
+              }
+            },
+            {
+              "field": "Drawing",
+              "labels": {
+                "fr": "Dessin",
+                "en": "Drawing"
+              },
+              "valuelist": ["fait", "à faire"]
+            },
+            {
+              "field": "Photo",
+              "labels": {
+                "fr": "Photo",
+                "en": "Photo"
+              },
+              "valuelist": ["fait", "à faire"]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "Artifact",
+      "subtype": "Stone",
+      "labels": {
+        "fr": "Pierre autre",
+        "en": "Stone other"
+      },
+      "plurals": {
+        "fr": "Pierres autres",
+        "en": "Stones other"
+      },
+      "relations": [
+        {
+          "relation": "includes",
+          "type": "Image"
+        },
+        {
+          "relation": "includes",
+          "type": "Sample"
+        },
+        {
+          "relation": "includes",
+          "type": "Artifact"
+        },
+        {
+          "relation": "belongs to",
+          "type": "Group",
+          "subtype": "Storage"
+        }
+      ],
+      "groups": [
+        {
+          "group": "General Section",
+          "labels": {
+            "fr": "Général",
+            "en": "General"
+          },
+          "fields": [
+            {
+              "field": "Identifier"
+            },
+            {
+              "field": "Title",
+              "labels": {
+                "fr": "Identification",
+                "en": "Identification"
+              },
+              "valuelist": [
+                "Anneau",
+                "Bloc",
+                "Dalle",
+                "éclat de percuteur",
+                "galet naturel",
+                "galet naturel altéré",
+                "galet utilisé",
+                "hache",
+                "Indéterminé",
+                "matière première",
+                "meule",
+                "Mortier",
+                "outil",
+                "pierre à rainures",
+                "pierre à cupules",
+                "pierre percée",
+                "percuteur",
+                "Peson",
+                "pierre à aiguiser",
+                "pilon",
+                "poids",
+                "poids-percuteur",
+                "polissoir",
+                "roche naturelle",
+                "Sceau",
+                "schiste",
+                "vase"
+              ]
+            },
+            {
+              "field": "Description"
+            },
+            {
+              "field": "Material"
+            },
+
+            {
+              "field": "State",
+              "labels": {
+                "fr": "État de conservation",
+                "en": "State of conservation"
+              },
+              "valuelist": ["fragmentaire", "complet"]
+            },
+            {
+              "field": "Format",
+              "labels": {
+                "fr": "Dimensions",
+                "en": "Format"
+              },
+              "multiline": true,
+              "tips": {
+                "fr": "H., L, larg., épais., diam., poids",
+                "en": "H., L, width, thick., diam., weight"
+              }
+            },
+            {
+              "field": "NMI"
+            },
+            {
+              "field": "NR"
+            },
+            {
+              "field": "Weight"
+            }
+          ]
+        },
+        {
+          "group": "Chronology Section",
+          "labels": {
+            "fr": "Chronologie",
+            "en": "Chronology"
+          },
+          "fields": [
+            {
+              "field": "Phase"
+            },
+            {
+              "field": "CoverageTemporal"
+            }
+          ]
+        },
+        {
+          "group": "Attachments",
+          "labels": {
+            "fr": "Photo",
+            "en": "Photo"
+          },
+          "plurals": {
+            "fr": "Photos",
+            "en": "Photos"
+          },
+          "fields": [
+            {
+              "field": "RelationAttachments"
+            }
+          ]
+        },
+        {
+          "group": "Points",
+          "labels": {
+            "fr": "Localisation",
+            "en": "Mapping"
+          },
+          "fields": [
+            {
+              "field": "Source"
+            },
+            {
+              "field": "CoverageSpatial"
+            }
+          ]
+        },
+        {
+          "group": "Relation Section",
+          "labels": {
+            "fr": "Relations",
+            "en": "Relations"
+          },
+          "fields": [
+            {
+              "field": "Relation"
+            }
+          ]
+        },
+        {
+          "group": "Status Section",
+          "labels": {
+            "fr": "Statuts",
+            "en": "Status"
+          },
+          "fields": [
+            {
+              "field": "RightsStatus",
+              "labels": {
+                "fr": "conservation",
+                "en": "observation"
+              },
+              "valuelist": ["fait"],
+              "tips": {
+                "fr": "On utilisera ici uniquement les statuts suivants: conservation (l'objet est en restauration); All done (l'objet a été restauré et est rangé); Attention (problème à clarifier)",
+                "en": "Only the following status must be used here: conservation (the artifact is being restored); All done (the artifact is restored and stored); Attention (there is a problem that needs clarification)"
+              }
+            },
+            {
+              "field": "Observation",
+              "labels": {
+                "fr": "Observation conservation",
+                "en": "Conservation observation"
+              }
+            },
+            {
+              "field": "Drawing",
+              "labels": {
+                "fr": "Dessin",
+                "en": "Drawing"
+              },
+              "valuelist": ["fait", "à faire"]
+            },
+            {
+              "field": "Photo",
+              "labels": {
+                "fr": "Photo",
+                "en": "Photo"
+              },
+              "valuelist": ["fait", "à faire"]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "Artifact",
+      "subtype": "Plaster",
+      "labels": {
+        "fr": "Enduits et mortiers de chaux",
+        "en": "Plaster and lime mortars"
+      },
+      "plurals": {
+        "fr": "Enduits et mortiers de chaux",
+        "en": "Plaster and lime mortars"
+      },
+      "relations": [
+        {
+          "relation": "includes",
+          "type": "Image"
+        },
+        {
+          "relation": "includes",
+          "type": "Sample"
+        },
+        {
+          "relation": "includes",
+          "type": "Artifact"
+        },
+        {
+          "relation": "belongs to",
+          "type": "Group",
+          "subtype": "Storage"
+        }
+      ],
+      "groups": [
+        {
+          "group": "General Section",
+          "labels": {
+            "fr": "Général",
+            "en": "General"
+          },
+          "fields": [
+            {
+              "field": "Identifier"
+            },
+            {
+              "field": "Title",
+              "labels": {
+                "fr": "Identification",
+                "en": "Identification"
+              },
+              "valuelist": ["Enduit : fragments", "Enduit peint", "Indéterminé"]
+            },
+            {
+              "field": "Description"
+            },
+            {
+              "field": "Material"
+            },
+
+            {
+              "field": "State",
+              "labels": {
+                "fr": "État de conservation",
+                "en": "State of conservation"
+              },
+              "valuelist": ["fragmentaire", "complet"]
+            },
+            {
+              "field": "Format",
+              "labels": {
+                "fr": "Dimensions",
+                "en": "Format"
+              },
+              "multiline": true,
+              "tips": {
+                "fr": "H., L, larg., épais., diam., poids",
+                "en": "H., L, width, thick., diam., weight"
+              }
+            },
+            {
+              "field": "NMI"
+            },
+            {
+              "field": "NR"
+            },
+            {
+              "field": "Weight"
+            }
+          ]
+        },
+        {
+          "group": "Chronology Section",
+          "labels": {
+            "fr": "Chronologie",
+            "en": "Chronology"
+          },
+          "fields": [
+            {
+              "field": "Phase"
+            },
+            {
+              "field": "CoverageTemporal"
+            }
+          ]
+        },
+        {
+          "group": "Attachments",
+          "labels": {
+            "fr": "Photo",
+            "en": "Photo"
+          },
+          "plurals": {
+            "fr": "Photos",
+            "en": "Photos"
+          },
+          "fields": [
+            {
+              "field": "RelationAttachments"
+            }
+          ]
+        },
+        {
+          "group": "Points",
+          "labels": {
+            "fr": "Localisation",
+            "en": "Mapping"
+          },
+          "fields": [
+            {
+              "field": "Source"
+            },
+            {
+              "field": "CoverageSpatial"
+            }
+          ]
+        },
+        {
+          "group": "Relation Section",
+          "labels": {
+            "fr": "Relations",
+            "en": "Relations"
+          },
+          "fields": [
+            {
+              "field": "Relation"
+            }
+          ]
+        },
+        {
+          "group": "Status Section",
+          "labels": {
+            "fr": "Statuts",
+            "en": "Status"
+          },
+          "fields": [
+            {
+              "field": "RightsStatus",
+              "labels": {
+                "fr": "conservation",
+                "en": "observation"
+              },
+              "valuelist": ["fait"],
+              "tips": {
+                "fr": "On utilisera ici uniquement les statuts suivants: conservation (l'objet est en restauration); All done (l'objet a été restauré et est rangé); Attention (problème à clarifier)",
+                "en": "Only the following status must be used here: conservation (the artifact is being restored); All done (the artifact is restored and stored); Attention (there is a problem that needs clarification)"
+              }
+            },
+            {
+              "field": "Observation",
+              "labels": {
+                "fr": "Observation conservation",
+                "en": "Conservation observation"
+              }
+            },
+            {
+              "field": "Drawing",
+              "labels": {
+                "fr": "Dessin",
+                "en": "Drawing"
+              },
+              "valuelist": ["fait", "à faire"]
+            },
+            {
+              "field": "Photo",
+              "labels": {
+                "fr": "Photo",
+                "en": "Photo"
+              },
+              "valuelist": ["fait", "à faire"]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "Artifact",
+      "subtype": "Raw_earth",
+      "labels": {
+        "fr": "Terre à bâtir, terre crue",
+        "en": "Raw earth"
+      },
+      "plurals": {
+        "fr": "Terre à bâtir, terre crue",
+        "en": "Raw earth"
+      },
+      "relations": [
+        {
+          "relation": "includes",
+          "type": "Image"
+        },
+        {
+          "relation": "includes",
+          "type": "Sample"
+        },
+        {
+          "relation": "includes",
+          "type": "Artifact"
+        },
+        {
+          "relation": "belongs to",
+          "type": "Group",
+          "subtype": "Storage"
+        }
+      ],
+      "groups": [
+        {
+          "group": "General Section",
+          "labels": {
+            "fr": "Général",
+            "en": "General"
+          },
+          "fields": [
+            {
+              "field": "Identifier"
+            },
+            {
+              "field": "Title",
+              "labels": {
+                "fr": "Identification",
+                "en": "Identification"
+              },
+              "valuelist": [
+                "Bouchon",
+                "Brique",
+                "Domatochôma / lepidochôma",
+                "Enduits argileux",
+                "Fragments"
+              ]
+            },
+            {
+              "field": "Description"
+            },
+            {
+              "field": "Material"
+            },
+
+            {
+              "field": "State",
+              "labels": {
+                "fr": "État de conservation",
+                "en": "State of conservation"
+              },
+              "valuelist": ["fragmentaire", "complet"]
+            },
+            {
+              "field": "Format",
+              "labels": {
+                "fr": "Dimensions",
+                "en": "Format"
+              },
+              "multiline": true,
+              "tips": {
+                "fr": "H., L, larg., épais., diam., poids",
+                "en": "H., L, width, thick., diam., weight"
+              }
+            },
+            {
+              "field": "NMI"
+            },
+            {
+              "field": "NR"
+            },
+            {
+              "field": "Weight"
+            }
+          ]
+        },
+        {
+          "group": "Chronology Section",
+          "labels": {
+            "fr": "Chronologie",
+            "en": "Chronology"
+          },
+          "fields": [
+            {
+              "field": "Phase"
+            },
+            {
+              "field": "CoverageTemporal"
+            }
+          ]
+        },
+        {
+          "group": "Attachments",
+          "labels": {
+            "fr": "Photo",
+            "en": "Photo"
+          },
+          "plurals": {
+            "fr": "Photos",
+            "en": "Photos"
+          },
+          "fields": [
+            {
+              "field": "RelationAttachments"
+            }
+          ]
+        },
+        {
+          "group": "Points",
+          "labels": {
+            "fr": "Localisation",
+            "en": "Mapping"
+          },
+          "fields": [
+            {
+              "field": "Source"
+            },
+            {
+              "field": "CoverageSpatial"
+            }
+          ]
+        },
+        {
+          "group": "Relation Section",
+          "labels": {
+            "fr": "Relations",
+            "en": "Relations"
+          },
+          "fields": [
+            {
+              "field": "Relation"
+            }
+          ]
+        },
+        {
+          "group": "Status Section",
+          "labels": {
+            "fr": "Statuts",
+            "en": "Status"
+          },
+          "fields": [
+            {
+              "field": "RightsStatus",
+              "labels": {
+                "fr": "conservation",
+                "en": "observation"
+              },
+              "valuelist": ["fait"],
+              "tips": {
+                "fr": "On utilisera ici uniquement les statuts suivants: conservation (l'objet est en restauration); All done (l'objet a été restauré et est rangé); Attention (problème à clarifier)",
+                "en": "Only the following status must be used here: conservation (the artifact is being restored); All done (the artifact is restored and stored); Attention (there is a problem that needs clarification)"
+              }
+            },
+            {
+              "field": "Observation",
+              "labels": {
+                "fr": "Observation conservation",
+                "en": "Conservation observation"
+              }
+            },
+            {
+              "field": "Drawing",
+              "labels": {
+                "fr": "Dessin",
+                "en": "Drawing"
+              },
+              "valuelist": ["fait", "à faire"]
+            },
+            {
+              "field": "Photo",
+              "labels": {
+                "fr": "Photo",
+                "en": "Photo"
+              },
+              "valuelist": ["fait", "à faire"]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "Artifact",
+      "subtype": "Bone",
+      "labels": {
+        "fr": "Os : faune",
+        "en": "Bone"
+      },
+      "plurals": {
+        "fr": "Os : faune",
+        "en": "Bones"
+      },
+      "relations": [
+        {
+          "relation": "includes",
+          "type": "Image"
+        },
+        {
+          "relation": "includes",
+          "type": "Sample"
+        },
+        {
+          "relation": "includes",
+          "type": "Artifact"
+        },
+        {
+          "relation": "belongs to",
+          "type": "Group",
+          "subtype": "Storage"
+        }
+      ],
+      "groups": [
+        {
+          "group": "General Section",
+          "labels": {
+            "fr": "Général",
+            "en": "General"
+          },
+          "fields": [
+            {
+              "field": "Identifier"
+            },
+            {
+              "field": "Title",
+              "labels": {
+                "fr": "Identification",
+                "en": "Identification"
+              },
+              "valuelist": [
+                "Corne",
+                "Corne bovin",
+                "Défense",
+                "Dent",
+                "Divers tortue",
+                "Insecte",
+                "Microfaune",
+                "Mollusque",
+                "Os animal",
+                "Os bovin",
+                "Os cervidé",
+                "Os cervidé daim",
+                "Os chèvre",
+                "Os carnivore",
+                "Os carnivore chien",
+                "Os équidé",
+                "Os grands herbivores",
+                "Os grand bovidé boeuf",
+                "Os groupe petit herbivore",
+                "Os humain",
+                "Os lagomorphe",
+                "Os ovicaprinés mouton",
+                "Os oiseau",
+                "Os ovicaprinés Ovis Capra",
+                "Os ovicaprinés chèvre",
+                "Os bovidé égagre",
+                "Os petit bovidé",
+                "Os poisson",
+                "Os suidé",
+                "Os suidé porc",
+                "Os suidé sanglier",
+                "Poisson"
+              ]
+            },
+            {
+              "field": "Description"
+            },
+            {
+              "field": "Material"
+            },
+
+            {
+              "field": "State",
+              "labels": {
+                "fr": "État de conservation",
+                "en": "State of conservation"
+              },
+              "valuelist": ["fragmentaire", "complet"]
+            },
+            {
+              "field": "Format",
+              "labels": {
+                "fr": "Dimensions",
+                "en": "Format"
+              },
+              "multiline": true,
+              "tips": {
+                "fr": "H., L, larg., épais., diam., poids",
+                "en": "H., L, width, thick., diam., weight"
+              }
+            },
+            {
+              "field": "NMI"
+            },
+            {
+              "field": "NR"
+            },
+            {
+              "field": "Weight"
+            }
+          ]
+        },
+        {
+          "group": "Chronology Section",
+          "labels": {
+            "fr": "Chronologie",
+            "en": "Chronology"
+          },
+          "fields": [
+            {
+              "field": "Phase"
+            },
+            {
+              "field": "CoverageTemporal"
+            }
+          ]
+        },
+        {
+          "group": "Attachments",
+          "labels": {
+            "fr": "Photo",
+            "en": "Photo"
+          },
+          "plurals": {
+            "fr": "Photos",
+            "en": "Photos"
+          },
+          "fields": [
+            {
+              "field": "RelationAttachments"
+            }
+          ]
+        },
+        {
+          "group": "Points",
+          "labels": {
+            "fr": "Localisation",
+            "en": "Mapping"
+          },
+          "fields": [
+            {
+              "field": "Source"
+            },
+            {
+              "field": "CoverageSpatial"
+            }
+          ]
+        },
+        {
+          "group": "Relation Section",
+          "labels": {
+            "fr": "Relations",
+            "en": "Relations"
+          },
+          "fields": [
+            {
+              "field": "Relation"
+            }
+          ]
+        },
+        {
+          "group": "Status Section",
+          "labels": {
+            "fr": "Statuts",
+            "en": "Status"
+          },
+          "fields": [
+            {
+              "field": "RightsStatus",
+              "labels": {
+                "fr": "conservation",
+                "en": "observation"
+              },
+              "valuelist": ["fait"],
+              "tips": {
+                "fr": "On utilisera ici uniquement les statuts suivants: conservation (l'objet est en restauration); All done (l'objet a été restauré et est rangé); Attention (problème à clarifier)",
+                "en": "Only the following status must be used here: conservation (the artifact is being restored); All done (the artifact is restored and stored); Attention (there is a problem that needs clarification)"
+              }
+            },
+            {
+              "field": "Observation",
+              "labels": {
+                "fr": "Observation conservation",
+                "en": "Conservation observation"
+              }
+            },
+            {
+              "field": "Drawing",
+              "labels": {
+                "fr": "Dessin",
+                "en": "Drawing"
+              },
+              "valuelist": ["fait", "à faire"]
+            },
+            {
+              "field": "Photo",
+              "labels": {
+                "fr": "Photo",
+                "en": "Photo"
+              },
+              "valuelist": ["fait", "à faire"]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "Artifact",
+      "subtype": "Bone_artifact",
+      "labels": {
+        "fr": "Os : objet",
+        "en": "Bone artifact"
+      },
+      "plurals": {
+        "fr": "Os : objets",
+        "en": "Bone artifacts"
+      },
+      "relations": [
+        {
+          "relation": "includes",
+          "type": "Image"
+        },
+        {
+          "relation": "includes",
+          "type": "Sample"
+        },
+        {
+          "relation": "includes",
+          "type": "Artifact"
+        },
+        {
+          "relation": "belongs to",
+          "type": "Group",
+          "subtype": "Storage"
+        }
+      ],
+      "groups": [
+        {
+          "group": "General Section",
+          "labels": {
+            "fr": "Général",
+            "en": "General"
+          },
+          "fields": [
+            {
+              "field": "Identifier"
+            },
+            {
+              "field": "Title",
+              "labels": {
+                "fr": "Identification",
+                "en": "Identification"
+              },
+              "valuelist": [
+                "Aiguille",
+                "Bouchon",
+                "Epingle",
+                "Esquille",
+                "Jeton",
+                "Os travaillé",
+                "Plaque décorée"
+              ]
+            },
+            {
+              "field": "Description"
+            },
+            {
+              "field": "Material"
+            },
+
+            {
+              "field": "State",
+              "labels": {
+                "fr": "État de conservation",
+                "en": "State of conservation"
+              },
+              "valuelist": ["fragmentaire", "complet"]
+            },
+            {
+              "field": "Format",
+              "labels": {
+                "fr": "Dimensions",
+                "en": "Format"
+              },
+              "multiline": true,
+              "tips": {
+                "fr": "H., L, larg., épais., diam., poids",
+                "en": "H., L, width, thick., diam., weight"
+              }
+            },
+            {
+              "field": "NMI"
+            },
+            {
+              "field": "NR"
+            },
+            {
+              "field": "Weight"
+            }
+          ]
+        },
+        {
+          "group": "Chronology Section",
+          "labels": {
+            "fr": "Chronologie",
+            "en": "Chronology"
+          },
+          "fields": [
+            {
+              "field": "Phase"
+            },
+            {
+              "field": "CoverageTemporal"
+            }
+          ]
+        },
+        {
+          "group": "Attachments",
+          "labels": {
+            "fr": "Photo",
+            "en": "Photo"
+          },
+          "plurals": {
+            "fr": "Photos",
+            "en": "Photos"
+          },
+          "fields": [
+            {
+              "field": "RelationAttachments"
+            }
+          ]
+        },
+        {
+          "group": "Points",
+          "labels": {
+            "fr": "Localisation",
+            "en": "Mapping"
+          },
+          "fields": [
+            {
+              "field": "Source"
+            },
+            {
+              "field": "CoverageSpatial"
+            }
+          ]
+        },
+        {
+          "group": "Relation Section",
+          "labels": {
+            "fr": "Relations",
+            "en": "Relations"
+          },
+          "fields": [
+            {
+              "field": "Relation"
+            }
+          ]
+        },
+        {
+          "group": "Status Section",
+          "labels": {
+            "fr": "Statuts",
+            "en": "Status"
+          },
+          "fields": [
+            {
+              "field": "RightsStatus",
+              "labels": {
+                "fr": "conservation",
+                "en": "observation"
+              },
+              "valuelist": ["fait"],
+              "tips": {
+                "fr": "On utilisera ici uniquement les statuts suivants: conservation (l'objet est en restauration); All done (l'objet a été restauré et est rangé); Attention (problème à clarifier)",
+                "en": "Only the following status must be used here: conservation (the artifact is being restored); All done (the artifact is restored and stored); Attention (there is a problem that needs clarification)"
+              }
+            },
+            {
+              "field": "Observation",
+              "labels": {
+                "fr": "Observation conservation",
+                "en": "Conservation observation"
+              }
+            },
+            {
+              "field": "Drawing",
+              "labels": {
+                "fr": "Dessin",
+                "en": "Drawing"
+              },
+              "valuelist": ["fait", "à faire"]
+            },
+            {
+              "field": "Photo",
+              "labels": {
+                "fr": "Photo",
+                "en": "Photo"
+              },
+              "valuelist": ["fait", "à faire"]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "Artifact",
+      "subtype": "Shell",
+      "labels": {
+        "fr": "Coquillage",
+        "en": "Shell"
+      },
+      "plurals": {
+        "fr": "Coquillages",
+        "en": "Shells"
+      },
+      "relations": [
+        {
+          "relation": "includes",
+          "type": "Image"
+        },
+        {
+          "relation": "includes",
+          "type": "Sample"
+        },
+        {
+          "relation": "includes",
+          "type": "Artifact"
+        },
+        {
+          "relation": "belongs to",
+          "type": "Group",
+          "subtype": "Storage"
+        }
+      ],
+      "groups": [
+        {
+          "group": "General Section",
+          "labels": {
+            "fr": "Général",
+            "en": "General"
+          },
+          "fields": [
+            {
+              "field": "Identifier"
+            },
+            {
+              "field": "Title",
+              "labels": {
+                "fr": "Identification",
+                "en": "Identification"
+              },
+              "valuelist": ["Coquille", "Coquille huître", "Coquille moule"]
+            },
+            {
+              "field": "Description"
+            },
+            {
+              "field": "Material"
+            },
+
+            {
+              "field": "State",
+              "labels": {
+                "fr": "État de conservation",
+                "en": "State of conservation"
+              },
+              "valuelist": ["fragmentaire", "complet"]
+            },
+            {
+              "field": "Format",
+              "labels": {
+                "fr": "Dimensions",
+                "en": "Format"
+              },
+              "multiline": true,
+              "tips": {
+                "fr": "H., L, larg., épais., diam., poids",
+                "en": "H., L, width, thick., diam., weight"
+              }
+            },
+            {
+              "field": "NMI"
+            },
+            {
+              "field": "NR"
+            },
+            {
+              "field": "Weight"
+            }
+          ]
+        },
+        {
+          "group": "Chronology Section",
+          "labels": {
+            "fr": "Chronologie",
+            "en": "Chronology"
+          },
+          "fields": [
+            {
+              "field": "Phase"
+            },
+            {
+              "field": "CoverageTemporal"
+            }
+          ]
+        },
+        {
+          "group": "Attachments",
+          "labels": {
+            "fr": "Photo",
+            "en": "Photo"
+          },
+          "plurals": {
+            "fr": "Photos",
+            "en": "Photos"
+          },
+          "fields": [
+            {
+              "field": "RelationAttachments"
+            }
+          ]
+        },
+        {
+          "group": "Points",
+          "labels": {
+            "fr": "Localisation",
+            "en": "Mapping"
+          },
+          "fields": [
+            {
+              "field": "Source"
+            },
+            {
+              "field": "CoverageSpatial"
+            }
+          ]
+        },
+        {
+          "group": "Relation Section",
+          "labels": {
+            "fr": "Relations",
+            "en": "Relations"
+          },
+          "fields": [
+            {
+              "field": "Relation"
+            }
+          ]
+        },
+        {
+          "group": "Status Section",
+          "labels": {
+            "fr": "Statuts",
+            "en": "Status"
+          },
+          "fields": [
+            {
+              "field": "RightsStatus",
+              "labels": {
+                "fr": "conservation",
+                "en": "observation"
+              },
+              "valuelist": ["fait"],
+              "tips": {
+                "fr": "On utilisera ici uniquement les statuts suivants: conservation (l'objet est en restauration); All done (l'objet a été restauré et est rangé); Attention (problème à clarifier)",
+                "en": "Only the following status must be used here: conservation (the artifact is being restored); All done (the artifact is restored and stored); Attention (there is a problem that needs clarification)"
+              }
+            },
+            {
+              "field": "Observation",
+              "labels": {
+                "fr": "Observation conservation",
+                "en": "Conservation observation"
+              }
+            },
+            {
+              "field": "Drawing",
+              "labels": {
+                "fr": "Dessin",
+                "en": "Drawing"
+              },
+              "valuelist": ["fait", "à faire"]
+            },
+            {
+              "field": "Photo",
+              "labels": {
+                "fr": "Photo",
+                "en": "Photo"
+              },
+              "valuelist": ["fait", "à faire"]
+            }
+          ]
+        }
+      ]
+    },
+
+    {
+      "type": "Sample",
+      "labels": {
+        "fr": "Échantillon",
+        "en": "Sample"
+      },
+      "plurals": {
+        "fr": "Échantillons",
+        "en": "Samples"
+      },
+      "relations": [
+        {
+          "relation": "includes",
+          "type": "Image"
+        }
+      ],
+      "groups": [
+        {
+          "group": "General Section",
+          "labels": {
+            "fr": "Général",
+            "en": "General"
+          },
+          "fields": [
+            {
+              "field": "Identifier"
+            },
+            {
+              "field": "Title",
+              "tips": {
+                "fr": "Type d'échantillon",
+                "en": "Sample Type"
+              },
+              "valuelist": [
+                "Flottation - FL",
+                "Micromorphologie - MIC",
+                "Enduit - EN",
+                "Terre à bâtir - TAB",
+                "Analyse de résidus - RES",
+                "Radiocarbone - RC",
+                "Phytolithes - PHY"
+              ],
+              "labels": {
+                "fr": "Type d'échantillon",
+                "en": "Sample Type"
+              }
+            },
+            {
+              "field": "SampleVolume",
+              "labels": {
+                "fr": "Volume",
+                "en": "Volume"
+              },
+              "tips": {
+                "fr": "Volume du prélèvement ou dimensions de l'échantillon, si demandé",
+                "en": "Sample volume, if requested"
+              }
+            },
+            {
+              "field": "Observations",
+              "labels": {
+                "fr": "Observations et observations sur le résultat du tri",
+                "en": "Observations and observations on the flotation result"
+              },
+              "multiline": true
+            }
+          ]
+        },
+        {
+          "group": "Properties Section",
+          "labels": {
+            "fr": "tri de flottation",
+            "en": "flotation sorting"
+          },
+          "fields": [
+            {
+              "field": "DateEarliest",
+              "labels": {
+                "fr": "date de flottation",
+                "en": "flotation date"
+              }
+            },
+            {
+              "field": "SampleTakenBy",
+              "labels": {
+                "fr": "Nom",
+                "en": "Name"
+              },
+              "valuelist": [],
+              "multivalue": true,
+              "tips": {
+                "fr": "flottation réalisée par",
+                "en": " flotation done by"
+              }
+            },
+            {
+              "field": "SampleCoarseFlotation",
+              "labels": {
+                "fr": "tri gros résidu",
+                "en": "coarse flot"
+              },
+              "valuelist": ["NO", "+", "++", "+++"]
+            },
+            {
+              "field": "SampleFineFlotation",
+              "labels": {
+                "fr": "tri fin résidu",
+                "en": "fine flot"
+              },
+              "valuelist": ["NO", "+", "++", "+++"]
+            },
+            {
+              "field": "Obsidian",
+              "labels": {
+                "fr": "obsidienne",
+                "en": "obsidian"
+              },
+              "valuelist": ["NO", "+", "++", "+++"]
+            },
+            {
+              "field": "enduits",
+              "labels": {
+                "fr": "enduits",
+                "en": "plaster"
+              },
+              "valuelist": ["NO", "+", "++", "+++"]
+            },
+            {
+              "field": "Charbons",
+              "labels": {
+                "fr": "charbons",
+                "en": "charcoal"
+              },
+              "valuelist": ["NO", "+", "++", "+++"]
+            },
+            {
+              "field": "graine",
+              "labels": {
+                "fr": "graine",
+                "en": "seed"
+              },
+              "valuelist": ["NO", "+", "++", "+++"]
+            },
+            {
+              "field": "faune terrestre",
+              "labels": {
+                "fr": "faune terrestre",
+                "en": "terrestrial fauna"
+              },
+              "valuelist": ["NO", "+", "++", "+++"]
+            },
+            {
+              "field": "faune marine et coquillages",
+              "labels": {
+                "fr": "faune marine et coquillages",
+                "en": "marine fauna and shells"
+              },
+              "valuelist": ["NO", "+", "++", "+++"]
+            },
+            {
+              "field": "Otolithes",
+              "labels": {
+                "fr": "Otolithes",
+                "en": "Otolithes"
+              },
+              "valuelist": ["NO", "+", "++", "+++"]
+            },
+            {
+              "field": "Autres",
+              "labels": {
+                "fr": "Autres",
+                "en": "Other"
+              },
+              "valuelist": ["NO", "+", "++", "+++"]
+            }
+          ]
+        },
+
+        {
+          "group": "Points",
+          "labels": {
+            "fr": "Localisation",
+            "en": "Mapping"
+          },
+          "fields": [
+            {
+              "field": "Source"
+            },
+            {
+              "field": "CoverageSpatial"
+            }
+          ]
+        },
+        {
+          "group": "Attachments",
+          "labels": {
+            "fr": "Photo",
+            "en": "Photo"
+          },
+          "plurals": {
+            "fr": "Photos",
+            "en": "Photos"
+          },
+          "fields": [
+            {
+              "field": "RelationAttachments"
+            }
+          ]
+        },
+        {
+          "group": "Relation Section",
+          "labels": {
+            "fr": "Relations",
+            "en": "Relations"
+          },
+          "fields": [
+            {
+              "field": "Relation"
+            }
+          ]
+        },
+        {
+          "group": "Status Section",
+          "labels": {
+            "fr": "Statuts",
+            "en": "Status"
+          },
+          "fields": [
+            {
+              "field": "RightsStatus"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "Image",
+      "label": "Photo",
+      "labels": {
+        "fr": "Photo",
+        "en": "Photo"
+      },
+      "plurals": {
+        "fr": "Photos",
+        "en": "Photos"
+      },
+      "groups": [
+        {
+          "group": "General Section",
+          "labels": {
+            "fr": "Général",
+            "en": "General"
+          },
+          "fields": [
+            {
+              "field": "Identifier",
+              "tips": {
+                "fr": "numérotation incrémentielle 1 à N",
+                "en": "incremental numbering 1 to N"
+              }
+            },
+            {
+              "field": "Num_EFA",
+              "labels": {
+                "fr": "Num EFA",
+                "en": "Num EFA"
+              }
+            },
+            {
+              "field": "Title",
+              "labels": {
+                "fr": "Légende",
+                "en": "Caption"
+              },
+              "tips": {
+                "fr": "Préciser quels contextes, structures, objets ou lots figurent sur la photo",
+                "en": "Specify which contexts, features, artefacts or lots are represented on the picture"
+              }
+            },
+            {
+              "field": "view",
+              "labels": {
+                "fr": "Vue depuis ",
+                "en": "from"
+              },
+              "tips": {
+                "fr": "vue depuis Nord / Sud / Est / Ouest / Verticale"
+              }
+            },
+            {
+              "field": "Drone",
+              "labels": {
+                "fr": "Drone",
+                "en": "Drone"
+              },
+              "valuelist": ["oui", "non"]
+            },
+            {
+              "field": "Creator",
+              "labels": {
+                "fr": "Auteur",
+                "en": "Creator"
+              },
+              "valuelist": []
+            },
+            {
+              "field": "DateEarliest",
+              "labels": {
+                "fr": "Date",
+                "en": "Date"
+              }
+            }
+          ]
+        },
+        {
+          "group": "Attachments",
+          "labels": {
+            "fr": "Photo",
+            "en": "Photo"
+          },
+          "plurals": {
+            "fr": "Photos",
+            "en": "Photos"
+          },
+          "fields": [
+            {
+              "field": "RelationAttachments"
+            }
+          ]
+        },
+        {
+          "group": "Points",
+          "labels": {
+            "fr": "Topo",
+            "en": "Mapping"
+          },
+          "fields": [
+            {
+              "field": "Source"
+            },
+            {
+              "field": "CoverageSpatial"
+            }
+          ]
+        },
+        {
+          "group": "Relation Section",
+          "labels": {
+            "fr": "Relations",
+            "en": "Relations"
+          },
+          "fields": [
+            {
+              "field": "Relation"
+            }
+          ]
+        },
+        {
+          "group": "Status Section",
+          "labels": {
+            "fr": "Statuts",
+            "en": "Status"
+          },
+          "fields": [
+            {
+              "field": "RightsStatus"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "Section",
+      "label": "Coupe / Section",
+      "labels": {
+        "fr": "Coupe / Section",
+        "en": "Section"
+      },
+      "plurals": {
+        "fr": "Coupes / Sections",
+        "en": "Sections"
+      },
+      "groups": [
+        {
+          "group": "General Section",
+          "labels": {
+            "fr": "Général",
+            "en": "General"
+          },
+          "fields": [
+            {
+              "field": "Title"
+            },
+            {
+              "field": "Identifier",
+              "labels": {
+                "fr": "Num EFA",
+                "en": "EFA num"
+              }
+            },
+            {
+              "field": "Creator",
+              "labels": {
+                "fr": "Auteur",
+                "en": "Creator"
+              },
+              "valuelist": []
+            },
+            {
+              "field": "DateEarliest",
+              "labels": {
+                "fr": "Date",
+                "en": "Date"
+              }
+            }
+          ]
+        },
+        {
+          "group": "Attachments",
+          "labels": {
+            "fr": "Coupe / Section",
+            "en": "Section"
+          },
+          "plurals": {
+            "fr": "Coupes / Sections",
+            "en": "Sections"
+          },
+          "fields": [
+            {
+              "field": "RelationAttachments"
+            }
+          ]
+        },
+        {
+          "group": "Description Section",
+          "labels": {
+            "fr": "Description",
+            "en": "Description"
+          },
+          "fields": [
+            {
+              "field": "Description"
+            }
+          ]
+        },
+        {
+          "group": "Points",
+          "labels": {
+            "fr": "Situation",
+            "en": "Location"
+          },
+          "fields": [
+            {
+              "field": "Source"
+            },
+            {
+              "field": "CoverageSpatial"
+            }
+          ]
+        },
+        {
+          "group": "Relation Section",
+          "labels": {
+            "fr": "Relations",
+            "en": "Relations"
+          },
+          "fields": [
+            {
+              "field": "Relation"
+            }
+          ]
+        },
+        {
+          "group": "Status Section",
+          "labels": {
+            "fr": "Statuts",
+            "en": "Status"
+          },
+          "fields": [
+            {
+              "field": "RightsStatus"
+            },
+            {
+              "field": "scan",
+              "labels": {
+                "fr": "Numérisé",
+                "en": "Scanned"
+              },
+              "valuelist": ["oui", "non"]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "Plan",
+      "labels": {
+        "fr": "Plan",
+        "en": "Plan"
+      },
+      "plurals": {
+        "fr": "Plans",
+        "en": "Plans"
+      },
+      "groups": [
+        {
+          "group": "General Section",
+          "labels": {
+            "fr": "Général",
+            "en": "General"
+          },
+          "fields": [
+            {
+              "field": "Source"
+            },
+            {
+              "field": "Title"
+            },
+            {
+              "field": "Identifier",
+              "labels": {
+                "fr": "Num EFA",
+                "en": "EFA num"
+              }
+            },
+            {
+              "field": "Creator",
+              "labels": {
+                "fr": "Auteur",
+                "en": "Creator"
+              },
+              "valuelist": []
+            },
+            {
+              "field": "DateEarliest",
+              "labels": {
+                "fr": "Date",
+                "en": "Date"
+              }
+            }
+          ]
+        },
+        {
+          "group": "Attachments",
+          "labels": {
+            "fr": "Plan",
+            "en": "Plan"
+          },
+          "fields": [
+            {
+              "field": "RelationAttachments"
+            }
+          ]
+        },
+        {
+          "group": "Description Section",
+          "labels": {
+            "fr": "Description",
+            "en": "Description"
+          },
+          "fields": [
+            {
+              "field": "Description"
+            }
+          ]
+        },
+        {
+          "group": "Points",
+          "labels": {
+            "fr": "Topo",
+            "en": "Mapping"
+          },
+          "fields": [
+            {
+              "field": "CoverageSpatial"
+            }
+          ]
+        },
+        {
+          "group": "Status Section",
+          "labels": {
+            "fr": "Statuts",
+            "en": "Status"
+          },
+          "fields": [
+            {
+              "field": "RightsStatus"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "Group",
+      "subtype": "Storage",
+      "labels": {
+        "fr": "Caisse",
+        "en": "Boxe"
+      },
+      "plurals": {
+        "fr": "Caisses",
+        "en": "Boxes"
+      },
+      "relations": [
+        {
+          "relation": "includes",
+          "type": "Artifact"
+        },
+        {
+          "relation": "includes",
+          "type": "Artifact",
+          "subtype": "Lot"
+        },
+        {
+          "relation": "includes",
+          "type": "Artifact",
+          "subtype": "Pottery"
+        },
+        {
+          "relation": "includes",
+          "type": "Artifact",
+          "subtype": "Lamp"
+        },
+        {
+          "relation": "includes",
+          "type": "Artifact",
+          "subtype": "Terracotta"
+        },
+        {
+          "relation": "includes",
+          "type": "Artifact",
+          "subtype": "Bronze"
+        },
+        {
+          "relation": "includes",
+          "type": "Artifact",
+          "subtype": "Metal"
+        },
+        {
+          "relation": "includes",
+          "type": "Artifact",
+          "subtype": "Obsidian"
+        },
+        {
+          "relation": "includes",
+          "type": "Artifact",
+          "subtype": "Stone"
+        },
+        {
+          "relation": "includes",
+          "type": "Artifact",
+          "subtype": "Plaster"
+        },
+        {
+          "relation": "includes",
+          "type": "Artifact",
+          "subtype": "Raw_earth"
+        },
+        {
+          "relation": "includes",
+          "type": "Artifact",
+          "subtype": "Bone"
+        },
+        {
+          "relation": "includes",
+          "type": "Artifact",
+          "subtype": "Bone_artifact"
+        },
+        {
+          "relation": "includes",
+          "type": "Artifact",
+          "subtype": "Shell"
+        },
+        {
+          "relation": "includes",
+          "type": "Sample"
+        },
+        {
+          "relation": "includes",
+          "type": "Image"
+        },
+        {
+          "relation": "includes",
+          "type": "Section"
+        },
+        {
+          "relation": "includes",
+          "type": "Sample"
+        }
+      ],
+      "groups": [
+        {
+          "group": "General Section",
+          "labels": {
+            "fr": "Général",
+            "en": "General"
+          },
+          "fields": [
+            {
+              "field": "Identifier"
+            },
+            {
+              "field": "Title",
+              "labels": {
+                "fr": "Identification",
+                "en": "Identification"
+              },
+              "valuelist": ["Lots", "Objets", "Echantillons"]
+            },
+            {
+              "field": "Description"
+            },
+            {
+              "field": "Localisation",
+              "labels": {
+                "fr": "Localisation",
+                "en": "Location"
+              }
+            },
+            {
+              "field": "DateEarliest",
+              "labels": {
+                "fr": "Date",
+                "en": "Date"
+              }
+            }
+          ]
+        },
+        {
+          "group": "Relation Section",
+          "labels": {
+            "fr": "Relations",
+            "en": "Relations"
+          },
+          "fields": [
+            {
+              "field": "Relation"
+            }
+          ]
+        },
+        {
+          "group": "Attachments",
+          "labels": {
+            "fr": "Photo",
+            "en": "Photo"
+          },
+          "plurals": {
+            "fr": "Photos",
+            "en": "Photos"
+          },
+          "fields": [
+            {
+              "field": "RelationAttachments"
+            }
+          ]
+        },
+        {
+          "group": "Points",
+          "labels": {
+            "fr": "Localisation",
+            "en": "Location"
+          },
+          "fields": [
+            {
+              "field": "CoverageSpatial"
+            }
+          ]
+        },
+        {
+          "group": "Status Section",
+          "labels": {
+            "fr": "Statuts",
+            "en": "Status"
+          },
+          "fields": [
+            {
+              "field": "RightsStatus"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "fields": [
+    {
+      "field": "Category",
+      "labels": {
+        "fr": "Catégorie",
+        "en": "Category"
+      }
+    },
+    {
+      "field": "Comments",
+      "labels": {
+        "fr": "Commentaires",
+        "en": "Comments"
+      },
+      "tips": {
+        "fr": "Éventuels commentaires",
+        "en": "Any comments"
+      },
+      "multiline": true
+    },
+    {
+      "field": "Phase",
+      "labels": {
+        "fr": "Phase",
+        "en": "Phase"
+      },
+      "valuelist": ["1", "2", "3", "4a"]
+    },
+    {
+      "field": "CoverageTemporal",
+      "labels": {
+        "fr": "Chrono",
+        "en": "Timespan"
+      },
+      "valuelist": [
+        "MA",
+        "MA II",
+        "MA II A",
+        "MA II B",
+        "MA III",
+        "MM",
+        "MM I",
+        "MM I A",
+        "MM I B",
+        "MM II",
+        "MM II B",
+        "MM III",
+        "MM IIIA",
+        "MM IIIB",
+        "MR I",
+        "MR I A",
+        "MR I A début",
+        "MR I A mature",
+        "MR I B",
+        "MR I B tardif",
+        "MR I-III",
+        "MR II",
+        "MR III",
+        "MR III A",
+        "MR III A1",
+        "MR III A2",
+        "MR III B",
+        "MR III C",
+        "Post-Minoen",
+        "Indéterminé"
+      ],
+      "multivalue": true,
+      "multitype": true
+    },
+    {
+      "field": "CoverageEarliest",
+      "labels": {
+        "fr": "De",
+        "en": "From"
+      }
+    },
+    {
+      "field": "CoverageLatest",
+      "labels": {
+        "fr": "À",
+        "en": "To"
+      }
+    },
+    {
+      "field": "DateEarliest",
+      "labels": {
+        "fr": "Début",
+        "en": "Date start"
+      }
+    },
+    {
+      "field": "DateLatest",
+      "labels": {
+        "fr": "Fin",
+        "en": "Date end"
+      }
+    },
+    {
+      "field": "Description",
+      "labels": {
+        "fr": "Description",
+        "en": "Description"
+      },
+      "multiline": true
+    },
+
+    {
+      "field": "Excavators",
+      "labels": {
+        "fr": "Fouilleurs",
+        "en": "Diggers"
+      },
+      "valuelist": [],
+      "multivalue": true,
+      "multitype": true
+    },
+
+    {
+      "field": "Authors",
+      "labels": {
+        "fr": "Auteurs",
+        "en": "Authors"
+      },
+      "valuelist": [],
+      "multivalue": true,
+      "multitype": true
+    },
+
+    {
+      "field": "Identifier",
+      "labels": {
+        "fr": "Numéro",
+        "en": "Number"
+      }
+    },
+
+    {
+      "field": "RightsStatus",
+      "labels": {
+        "fr": "Statut",
+        "en": "Status"
+      }
+    },
+    {
+      "field": "RightsSidelined",
+      "labels": {
+        "fr": "Invisible",
+        "en": "Sidelined"
+      },
+      "tips": {
+        "fr": "Permet de ne pas faire figurer les polygones ou points sur le plan",
+        "en": "Allows to sideline polygons or points so that they are not displayed on the map"
+      }
+    },
+    {
+      "field": "Source",
+      "labels": {
+        "fr": "Secteur",
+        "en": "Trench"
+      },
+      "tips": {
+        "fr": "Nom du secteur, attribué automatiquement",
+        "en": "Trench name, auto populated"
+      }
+    },
+
+    {
+      "field": "Title",
+      "labels": {
+        "fr": "Titre",
+        "en": "Title"
+      }
+    },
+
+    {
+      "field": "Type",
+      "labels": {
+        "fr": "Catégorie",
+        "en": "Catégory"
+      },
+      "tips": {
+        "fr": "Type d'enregistrement: contexte, structure, objet inventorié, lot, image, plan, divers",
+        "en": "Type of item: context, feature, artifact, lot, image, plan, other"
+      }
+    },
+    {
+      "field": "Subtype",
+      "labels": {
+        "fr": "Sous catégorie",
+        "en": "Sub category"
+      }
+    },
+    {
+      "field": "Material",
+      "labels": {
+        "fr": "Matériau",
+        "en": "Material"
+      },
+      "multivalue": true,
+      "valuelist": ["ANI", "CER", "MET", "MIN", "VER"]
+    },
+    {
+      "field": "NMI",
+      "labels": {
+        "fr": "NMI",
+        "en": "NMI"
+      },
+      "tips": {
+        "fr": " Mettre ici des indications sur le comptage des NMI",
+        "en": "Put here indications on the counting of NMI"
+      }
+    },
+    {
+      "field": "NR",
+      "labels": {
+        "fr": "NR",
+        "en": "NR"
+      },
+      "tips": {
+        "fr": " Nombre de restes",
+        "en": "Number of remains"
+      }
+    },
+    {
+      "field": "Weight",
+      "labels": {
+        "fr": "Poids",
+        "en": "Weight"
+      },
+      "tips": {
+        "fr": "en Kg",
+        "en": "in Kg"
+      }
+    }
+  ]
+}
