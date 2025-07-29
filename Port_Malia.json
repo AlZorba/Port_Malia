@@ -1,7 +1,7 @@
 {
-  "version": 1,
+  "version": 20250729,
   "project": "Port_Malia",
-  "crs": "WGS84",
+  "crs": "EPSG:2100",
   "types": [
     {
       "type": "Context",
