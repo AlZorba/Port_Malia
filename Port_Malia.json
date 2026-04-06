@@ -973,8 +973,8 @@
             {
               "field": "Title",
               "labels": {
-                "fr": "Identification",
-                "en": "Identification"
+                "fr": "Fiche lot",
+                "en": "Lot number"
               },
               "valuelist": [
                 "Céram - 001",
@@ -1004,6 +1004,63 @@
             },
             {
               "field": "Weight"
+            }
+          ]
+        },
+        {
+          "group": "pottery lot",
+          "labels": {
+            "fr": "Lot céramique",
+            "en": "Pottery lot"
+          },
+          "fields": [
+            {
+              "field": "condition",
+              "labels": {
+                "fr": "Etat des tessons",
+                "en": "Sherd condition"
+              },
+              "valuelist": [
+                "cassures fraîches",
+                "érodés",
+                "très érodés"
+              ]
+            },
+            {
+              "field": "fragmentation",
+              "labels": {
+                "fr": "Fragmentation",
+                "en": "Fragmentation"
+              },
+              "valuelist": [
+                "petits",
+                "moyens",
+                "grands"
+              ]
+            },
+            {
+              "field": "primaryfinds",
+              "labels": {
+                "fr": "Matériel majoritaire unique",
+                "en": "Majority material"
+              },
+              "tips": {
+                "fr": "Description par catégorie fonctionnelle : \n-vaisselle de table\n-vaisselle de cuisine\n-vaisselle de stockage.\n Description, à l’intérieur de chaque catégorie fonctionnelle, des :\n-pâtes\n-typologies \n-traitements de surface\n-tessons diagnostiques\n",
+                "en": " Description by functional category: \n-tableware\n-kitchenware\n-storage vessels.\n Description, within each functional category, of:\n-pastes\n-typologies\n-surface treatments\n-diagnostic sherds"
+              },
+              "multiline": "true"
+            },
+            {
+              "field": "secondaryfinds",
+              "labels": {
+                "fr": "Matériel secondaire et intrusions",
+                "en": "Secondary material and intrusions"
+              },
+              "tips": {
+                "fr": "Description par catégorie fonctionnelle : \n-vaisselle de table\n-vaisselle de cuisine\n-vaisselle de stockage.\n Description, à l’intérieur de chaque catégorie fonctionnelle, des :\n-pâtes\n-typologies \n-traitements de surface\n-tessons diagnostiques\n",
+                "en": " Description by functional category: \n-tableware\n-kitchenware\n-storage vessels.\n Description, within each functional category, of:\n-pastes\n-typologies\n-surface treatments"
+              },
+              "multiline": "true"
             }
           ]
         },
