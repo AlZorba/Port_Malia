@@ -333,6 +333,17 @@
               "field": "Source"
             },
             {
+              "field": "Z upper and lower",
+              "labels": {
+                "fr": "Z supérieurs, Z inférieurs",
+                "en": "Upper Z, Lower Z"
+              },
+              "tips": {
+                "fr": "indiquer si le pendage est important, et si c'est le cas préciser la localisation (ou le n°) des points de référence",
+                "en": "indicate if the slope is significant, and if so, specify the location (or number) of the reference points"
+              }
+            },
+            {
               "field": "CoverageSpatial"
             }
           ]
@@ -1020,11 +1031,7 @@
                 "fr": "Etat des tessons",
                 "en": "Sherd condition"
               },
-              "valuelist": [
-                "cassures fraîches",
-                "érodés",
-                "très érodés"
-              ]
+              "valuelist": ["cassures fraîches", "érodés", "très érodés"]
             },
             {
               "field": "fragmentation",
@@ -1032,11 +1039,7 @@
                 "fr": "Fragmentation",
                 "en": "Fragmentation"
               },
-              "valuelist": [
-                "petits",
-                "moyens",
-                "grands"
-              ]
+              "valuelist": ["petits", "moyens", "grands"]
             },
             {
               "field": "primaryfinds",
@@ -3936,23 +3939,9 @@
           },
           "fields": [
             {
-              "field": "Identifier",
-              "tips": {
-                "fr": "numérotation incrémentielle 1 à N",
-                "en": "incremental numbering 1 to N"
-              }
-            },
-            {
-              "field": "Num_EFA",
-              "labels": {
-                "fr": "Num EFA",
-                "en": "Num EFA"
-              }
-            },
-            {
               "field": "Title",
               "labels": {
-                "fr": "Légende",
+                "fr": "Observations",
                 "en": "Caption"
               },
               "tips": {
@@ -3969,14 +3958,6 @@
               "tips": {
                 "fr": "vue depuis Nord / Sud / Est / Ouest / Verticale"
               }
-            },
-            {
-              "field": "Drone",
-              "labels": {
-                "fr": "Drone",
-                "en": "Drone"
-              },
-              "valuelist": ["oui", "non"]
             },
             {
               "field": "Creator",
