@@ -1044,8 +1044,8 @@
             {
               "field": "primaryfinds",
               "labels": {
-                "fr": "Matériel majoritaire unique",
-                "en": "Majority material"
+                "fr": "Matériel majoritaire ou unique",
+                "en": "Majority or unique material"
               },
               "tips": {
                 "fr": "Description par catégorie fonctionnelle : \n-vaisselle de table\n-vaisselle de cuisine\n-vaisselle de stockage.\n Description, à l’intérieur de chaque catégorie fonctionnelle, des :\n-pâtes\n-typologies \n-traitements de surface\n-tessons diagnostiques\n",
